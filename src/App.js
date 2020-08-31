@@ -2,7 +2,9 @@ import React from 'react';
 import {Switch,Route,Link} from "react-router-dom";
 
 import Home from './pages/home';
-import About from './pages/about';
+import Xime from './pages/xime';
+import Daro from './pages/daro';
+import Lucas from './pages/lucas';
 
 import './App.css';
 
@@ -15,7 +17,13 @@ const App = () => {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/xime">Xime</Link>
+              </li>
+              <li>
+                <Link to="/daro">Daro</Link>
+              </li>
+              <li>
+                <Link to="/lucas">Lucas</Link>
               </li>
             </ul>
             <hr />
@@ -25,8 +33,14 @@ const App = () => {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/about">
-              <About />
+            <Route path="/xime">
+              <Xime />
+            </Route>
+            <Route path="/daro">
+              <Daro />
+            </Route>
+            <Route path="/lucas">
+              <Lucas />
             </Route>
           </Switch>
         </main>
