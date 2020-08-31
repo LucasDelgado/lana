@@ -1,0 +1,224 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.mod-media {
+    position: relative;
+    //overflow: hidden;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    margin-bottom: $spacing-lg;
+    // .row {
+    //     position: relative;
+    // }
+    // &:not(.cuerpo__nota &) {
+    //     border-bottom: 1px solid #d9d9d9;
+    // }
+
+    &.--zoom.--active {
+        position: fixed;
+        z-index: 999999;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        max-width: none;
+        margin: 0 auto;
+        text-align: center;
+        background: $negro;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        .slide {
+            width: 50%;
+            @media (min-height: 400px) {
+                width: 100%;
+            }
+            @media ($media-l) {
+                width: 50%;
+                max-width: px(1000);
+                position: absolute;
+                @media (min-height: 600px) {
+                    width: 60%;
+                }
+                @media (min-height: 750px) {
+                    width: 70%;
+                    max-width: px(1050);
+                }
+                @media (min-height: 800px) {
+                    width: 75%;
+                }
+                @media (min-height: 950px) {
+                    width: 85%;
+                    max-width: px(1150);
+                }
+            }
+            .mod-figure {
+                width: 100%;
+                max-width: none;
+            }
+        }
+        @media ($media-l) {
+            //1024
+            background: rgba(0, 0, 0, 0.9);
+        }
+    }
+
+    &.--slider {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+
+        .slide {
+            width: 100%;
+        }
+
+        .cont-figure {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-item-align: start;
+            align-self: flex-start;
+            width: 100%;
+            background-color: initial;
+            min-height: 300px;
+            //max-height: 300px;
+            @media (min-width: 768px) {
+                max-height: 600px;
+            }
+            .figure .content-pic > * {
+                max-width: 100%;
+                object-fit: contain;
+                min-height: 100%;
+            }
+        }
+
+        > section {
+            width: 100%;
+            > .cont-figure > .figure {
+                pointer-events: none;
+                min-height: 300px;
+
+                @media (min-width: 768px) {
+                    min-height: 500px;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    opacity: 0;
+                    right: 0;
+                    background-color: rgba(45, 45, 45, 0.6);
+                    background-image: url(/pf/resources/dist/images/32b5d57d16b6854dec721a5325614df0.png?d=16);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 3em;
+                    transition: 0.2s ease opacity;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-image: url(/pf/resources/dist/images/44ded6da71e1b5c45ef04e5434741dbd.png?d=16);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    transition: 0.2s ease opacity;
+                }
+            }
+        }
+    }
+
+    .mod-video {
+        @include fullwidth;
+        margin-bottom: 0.5rem;
+        @media ($media-l) {
+            width: 100%;
+            margin-left: 0;
+        }
+        > .powa {
+            cursor: pointer;
+            &:hover {
+                .powa-shot-play-btn svg {
+                    fill: $ln;
+                }
+            }
+            .powa-bar-play-pause:active,
+            .powa-bar-audio-icon:active,
+            .powa-bar-fullscreen:active {
+                color: $ln;
+            }
+            .powa-shot-play-btn svg:hover {
+                fill: $ln;
+            }
+            .powa-bar-scrubber-time,
+            .powa-bar-volume-level {
+                background-color: rgba(0, 116, 196, 0.9);
+            }
+            .powa-bar-scrubber-progress {
+                background-color: rgba(0, 116, 196, 0.2);
+            }
+        }
+    }
+}
+
+// .sidebar__main .mod-media {
+//     //margin-bottom: $spacing-lg;
+//     // border-bottom: 1px solid #b9b9b9;
+//     // padding-bottom: px(16);
+// }
+
+// .cuerpo__nota .mod-media {
+//     // margin-bottom: px(60);
+// }
+
+// .sidebar__main .more-articles .mod-media,
+// .more-articles .mod-media,
+// .mod-caja-nota .mod-media,
+// .cuerpo__nota .mod-media {
+//     // margin-bottom: 0;
+//     // border: none;
+//     // padding-bottom: 0;
+// }
+
+// .cuerpo__nota .mod-media {
+//     //margin-bottom: px(60);
+// }
+
+.more-articles .mod-media,
+.mod-caja-nota .mod-media {
+    margin-bottom: 0;
+}

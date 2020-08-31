@@ -1,0 +1,16 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.com-embed {
+    margin-bottom: $spacing-lg;
+    &.--youtube,
+    &.--vimeo,
+    &.--dailymotion {
+        iframe {
+            @media (max-width: 375px) {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+}

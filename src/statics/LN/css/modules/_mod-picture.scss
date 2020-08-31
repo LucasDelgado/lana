@@ -1,0 +1,114 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.mod-picture {
+    position: relative;
+    background: $gris1;
+    display: block;
+    transition: all 0.2s ease-in-out;
+
+    border-top: 1px solid $gris3;
+    border-bottom: 1px solid $gris3;
+    margin-bottom: $spacing;
+
+    //100% mobile
+    @include fullwidth;
+
+    //100% ipad dentro de nota
+    .mod-opening &,
+    .cuerpo__nota & {
+        @include fullwidth;
+    }
+
+    @media ($media-m) {
+        width: 100%;
+        margin-left: 0;
+        .mod-caja-nota & {
+            .acu & {
+                border: 1px solid $gris3;
+            }
+        }
+    }
+    @media ($media-l) {
+        border: 1px solid $gris3;
+        .mod-opening &,
+        .cuerpo__nota & {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    .--slider.--slider & {
+        display: flex;
+        padding-bottom: $picture;
+        padding-top: initial;
+        justify-content: center;
+        background: $gris1;
+    }
+    .--active.--active &,
+    .--active.--slider & {
+        background: none;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        border: 0;
+    }
+
+    .mod-caja-nota & {
+        .cuerpo__nota &,
+        .acu & {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+
+.mod-caja-nota,
+.mod-opening,
+.--horizontal,
+.--vertical {
+    .mod-picture {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .com-image {
+            position: absolute;
+            object-fit: cover;
+            //width: 100%;
+            height: 100%;
+            top: 0;
+        }
+        &::before {
+            font-family: 'LNlogos';
+            content: '\e80a';
+            color: #d9d9d9;
+            font-size: 4.22em;
+            font-weight: 400;
+            text-transform: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.mod-caja-nota,
+.--horizontal {
+    .mod-picture {
+        padding-top: $picture;
+    }
+}
+
+.--vertical {
+    .mod-picture {
+        padding-top: calc((4 / 3) * 100%);
+    }
+    @media ($media-m) {
+        .--active & {
+            .mod-picture {
+                padding-top: initial;
+            }
+        }
+    }
+}

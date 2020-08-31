@@ -1,0 +1,8 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.mod-opening {
+    //estilos base
+    position: relative;
+    margin-bottom: $spacing-lg;
+}
