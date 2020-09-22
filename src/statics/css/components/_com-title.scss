@@ -1,0 +1,38 @@
+.com-title {
+//que hacemos con el font-weight? lo pasamos aparte? Ver Figma.
+//como configuramos la font del sitio? hice variables.
+  &.3xl {
+    font-size: px(48);
+    line-height: px(56);
+  }
+
+  &.2xl {
+    font-size: px(40);
+    line-height: px(52);
+  }
+
+  &.xl {
+    font-size: px(32);
+    line-height: px(40);
+  }
+  &.l {
+    font-size: px(24);
+    line-height: px(32);
+  }
+  &.m {
+    font-size: px(20);
+    line-height: px(28);
+  }
+  &.s {
+    font-size: px(18);
+    line-height: px(26);
+  }
+  &.xs {
+    font-size: px(16);
+    line-height: px(24);
+  }
+  &.2xs {
+    font-size: px(19);
+    line-height: px(30);
+  }
+}

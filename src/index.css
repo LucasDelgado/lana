@@ -18,7 +18,7 @@ footer {
   margin-top: 20px;
 }
 
-#daro p {
+#contenidos p {
   margin:0;
 }
 
@@ -38,49 +38,49 @@ footer {
   padding: 8px 16px;
 }
 
-#daro .com-button {
+#contenidos .com-button {
   background: #0074c4;
   border: 1px solid #0074c4;
   color: white;
 }
 
-#daro .com-button:hover {
+#contenidos .com-button:hover {
   background: #049aff;
   border: 1px solid #049aff;
 }
-#daro .com-button.--secondary {
+#contenidos .com-button.--secondary {
   background: white;
   border: 1px solid #0074c4;
   color: #0074c4;
 }
-#daro .com-button.--secondary:hover {
+#contenidos .com-button.--secondary:hover {
   background: #0074c4;
   border: 1px solid #0074c4;
   color: white;
 }
 
-#daro .com-button.--tertiary {
+#contenidos .com-button.--tertiary {
   background: #f2f2f2;
   border: 1px solid #f2f2f2;
   color: #222;
 }
-#daro .com-button.--tertiary:hover {
+#contenidos .com-button.--tertiary:hover {
   background: #e4e4e4;
   border: 1px solid #e4e4e4;
   color: #222;
 }
 
-#daro .com-button.--special {
+#contenidos .com-button.--special {
   background: #ffff24;
   border: 1px solid #ccc;
   color: #222;
 }
-#daro .com-button.--special:hover {
+#contenidos .com-button.--special:hover {
   background: #000;
   border: 1px solid #000;
   color: #fff;
 }
 
-.com-title {
+#contenidos .com-title {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }

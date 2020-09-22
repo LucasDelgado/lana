@@ -16,14 +16,12 @@ $cant-col: 12; //Cantidad de columnas
 $col-width: 100 / $cant-col; //Ancho de columnas
 $scroll-width: px(17);
 
-
-//=======================================
-// Colores
-//=======================================
-
 //=======================================
 // Fonts
 //=======================================
+$font-sueca: 'Sueca';
+$font-roboto: 'Roboto';
+$font-arial: 'Arial';
 
 //=======================================
 // Media Queries
@@ -40,6 +38,8 @@ $media-xl: 'min-width: 83.75em'; // 1340px
 //=======================================
 // Calles entre columnas
 //=======================================
+
+
 
 
 //=======================================
@@ -65,3 +65,112 @@ $spacing-lg: $spacing * 4; //32px
 $spacing-xl: $spacing * 5; //40px
 $spacing-2xl: $spacing * 8; //64px
 $spacing-3xl: $spacing * 10; //80px
+
+
+//=======================================
+// Colores
+//=======================================
+$light-blue-100: #E8F5FF;
+$light-blue-200: #BEE4FF;
+$light-blue-300: #41B1FF;
+$light-blue-400: #008DFF;
+$light-blue-500: #0074C4;
+$light-blue-600: #006998;
+$light-blue-700: #00547A;
+$light-blue-800: #003F5B;
+$light-blue-900: #002A3D;
+
+$neutral-white: #FFFFFF;
+$light-neutral-50: #FEFEFE;
+$light-neutral-100: #F2F2F2;
+$light-neutral-200: #E4E4E4;
+$light-neutral-300: #CCCCCC;
+$light-neutral-400: #ADADAD;
+$light-neutral-500: #919191;
+$light-neutral-600: #5A5A5A;
+$light-neutral-700: #333333;
+$light-neutral-800: #272727;
+$light-neutral-900: #1C1C1F;
+$neutral-black: #000000;
+
+$pink-100: #F7D2DB;
+$pink-400: #E61F63;
+$pink-500: #BE1A52;
+$pink-600: #981542;
+$pink-700: #731032;
+
+$yellow-100: #FFFFBD;
+$yellow-200: #FFFFBD;
+$yellow-300: #FFFFBD;
+$yellow-400: #FFFF24;
+$yellow-500: #EBD627;
+$yellow-600: #D8AC2B;
+$yellow-700: #C4832E;
+$yellow-800: #C5661D;
+$yellow-900: #C6480C;
+
+$teal-100:#BCF5F4;
+$teal-400: #1EDDDA;
+$teal-500: #15AFAF;
+$teal-600: #0C8485;
+$teal-700: #055B5E;
+
+$red-100: #FFD2D2;
+$red-400: #F44336;
+$red-500: #E2342D;
+$red-600: #C61C1E;
+$red-700: #B40D15;
+
+$orange-100: #FFF5DF;
+$orange-200: #FFE8C0;
+$orange-300: #FFC968;
+$orange-400: #FCB73C;
+$orange-500: #EF9B30;
+$orange-600: #D46418;
+$orange-700: #C6480C;
+$orange-800: #893006;
+$orange-900: #4C1800;
+
+$green-100: #C1F7B6;
+$green-400: #30E60B;
+$green-500: #20B707;
+$green-700: #036002;
+
+$violet-100: #EAEBFF;
+$violet-200: #C5C6FF;
+$violet-300: #7B7EFF;
+$violet-400: #5659FF;
+$violet-500: #1417CF;
+$violet-600: #0003A6;
+$violet-700: #00027D;
+$violet-800: #000254;
+$violet-900: #00043A;
+
+//=======================================
+// Colores Dark Mode
+//=======================================
+$dark-blue-100: #D5FFFF;
+$dark-blue-200: #B7E9FF;
+$dark-blue-300: #70D3FF;
+$dark-blue-400: #22B8FF;
+
+$dark-neutral-50: #1C1C1F;
+$dark-neutral-100: #272727;
+$dark-neutral-200: #333333;
+$dark-neutral-300: #5A5A5A;
+$dark-neutral-400: #919191;
+$dark-neutral-500: #ADADAD;
+$dark-neutral-600: #CCCCCC;
+$dark-neutral-700: #E4E4E4;
+$dark-neutral-800: #F2F2F2;
+$dark-neutral-900: #FFFFFF;
+
+
+//=======================================
+// Box Shadows
+//=======================================
+$shadow-2xs: 0px 2px 4px rgba(0, 0, 0, 0.07);
+$shadow-xs: 0px 4px 8px rgba(0, 0, 0, 0.06);
+$shadow-sm: 0px 8px 16px rgba(0, 0, 0, 0.05);
+$shadow-md: 0px 12px 24px rgba(0, 0, 0, 0.04);
+$shadow-lg: 0px 16px 32px rgba(0, 0, 0, 0.03);
