@@ -189,8 +189,14 @@ $dark-neutral-900: #FFFFFF;
 //=======================================
 // Box Shadows
 //=======================================
-$shadow-2xs: 0px 2px 4px rgba(0, 0, 0, 0.07);
-$shadow-xs: 0px 4px 8px rgba(0, 0, 0, 0.06);
-$shadow-sm: 0px 8px 16px rgba(0, 0, 0, 0.05);
-$shadow-md: 0px 12px 24px rgba(0, 0, 0, 0.04);
-$shadow-lg: 0px 16px 32px rgba(0, 0, 0, 0.03);
+$shadow-down-2xs: 0px 2px 4px rgba(0, 0, 0, 0.16);
+$shadow-down-xs: 0px 4px 8px rgba(0, 0, 0, 0.08);
+$shadow-down-sm: 0px 8px 16px rgba(0, 0, 0, 0.06);
+$shadow-down-md: 0px 12px 24px rgba(0, 0, 0, 0.04);
+$shadow-down-lg: 0px 16px 32px rgba(0, 0, 0, 0.03);
+
+$shadow-up-2xs: 0px 2px 4px rgba(0, 0, 0, 0.16);
+$shadow-up-xs: 0px 4px 8px rgba(0, 0, 0, 0.08);
+$shadow-up-sm: 0px 8px 16px rgba(0, 0, 0, 0.06);
+$shadow-up-md: 0px 12px 24px rgba(0, 0, 0, 0.04);
+$shadow-up-lg: 0px 16px 32px rgba(0, 0, 0, 0.03);
