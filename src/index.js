@@ -5,9 +5,6 @@ import * as serviceWorker from './serviceWorker';
 
 import App from './App';
 
-import './index.css';
-import './statics/css/site.css';
-
 ReactDOM.render(  
     <Router>
       <App />
