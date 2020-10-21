@@ -188,8 +188,8 @@ a:hover {
 
 @font-face {
   font-family: "SuecaMedium";
-  src: url("../../fonts/suecaslab-medium.eot");
-  src: url("../../fonts/suecaslab-medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/suecaslab-medium.woff") format("woff"), url("../../fonts/suecaslab-medium.ttf") format("truetype"), url("../../fonts/suecaslab-medium.svg?#webfont") format("svg");
+  src: url("statics/fonts/suecaslab-medium.eot");
+  src: url("statics/fonts/suecaslab-medium.eot?#iefix") format("embedded-opentype"), url("statics/fonts/suecaslab-medium.woff") format("woff"), url("statics/fonts/suecaslab-medium.ttf") format("truetype"), url("statics/fonts/suecaslab-medium.svg?#webfont") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -197,8 +197,8 @@ a:hover {
 
 @font-face {
   font-family: "SuecaBold";
-  src: url("../../fonts/suecaslab-bold.eot");
-  src: url("../../fonts/suecaslab-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/suecaslab-bold.woff") format("woff"), url("../../fonts/suecaslab-bold.ttf") format("truetype"), url("../../fonts/suecaslab-bold.svg?#webfont") format("svg");
+  src: url("statics/fonts/suecaslab-bold.eot");
+  src: url("statics/fonts/suecaslab-bold.eot?#iefix") format("embedded-opentype"), url("statics/fonts/suecaslab-bold.woff") format("woff"), url("statics/fonts/suecaslab-bold.ttf") format("truetype"), url("statics/fonts/suecaslab-bold.svg?#webfont") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -206,8 +206,8 @@ a:hover {
 
 @font-face {
   font-family: "Icons";
-  src: url("../../fonts/icons.eot");
-  src: url("../../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../../fonts/icons.woff") format("woff"), url("../../fonts/icons.ttf") format("truetype"), url("../../fonts/icons.svg?#webfont") format("svg");
+  src: url("statics/fonts/icons.eot");
+  src: url("statics/fonts/icons.eot?#iefix") format("embedded-opentype"), url("statics/fonts/icons.woff") format("woff"), url("statics/fonts/icons.ttf") format("truetype"), url("statics/fonts/icons.svg?#webfont") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -215,8 +215,8 @@ a:hover {
 
 @font-face {
   font-family: "Logos";
-  src: url("../../fonts/logos.eot");
-  src: url("../../fonts/logos.eot?#iefix") format("embedded-opentype"), url("../../fonts/logos.woff") format("woff"), url("../../fonts/logos.ttf") format("truetype"), url("../../fonts/logos.svg?#webfont") format("svg");
+  src: url("statics/fonts/logos.eot");
+  src: url("statics/fonts/logos.eot?#iefix") format("embedded-opentype"), url("statics/fonts/logos.woff") format("woff"), url("statics/fonts/logos.ttf") format("truetype"), url("statics/fonts/logos.svg?#webfont") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
