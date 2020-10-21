@@ -1,3 +1,345 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
 
+@include font-face('SuecaMedium', suecaslab-medium, normal);
+@include font-face('SuecaBold', suecaslab-bold, normal);
+@include font-face('Icons', icons, normal);
+@include font-face('Logos', logos, normal);
+
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'Icons';
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: px(24);
+    padding: px(4);
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-Clear-Night:before {
+    content: "\e900";
+  }
+  .icon-Cloudy:before {
+    content: "\e901";
+  }
+  .icon-Rain:before {
+    content: "\e902";
+  }
+  .icon-Rainy-Cloudy:before {
+    content: "\e903";
+  }
+  .icon-Snow-Cloudy:before {
+    content: "\e904";
+  }
+  .icon-Snow:before {
+    content: "\e905";
+  }
+  .icon-Storm-Cloudy:before {
+    content: "\e906";
+  }
+  .icon-Storm:before {
+    content: "\e907";
+  }
+  .icon-Sun-Cloudy:before {
+    content: "\e908";
+  }
+  .icon-Sun:before {
+    content: "\e909";
+  }
+  .icon-Windy:before {
+    content: "\e90a";
+  }
+  .icon-Email-Filled:before {
+    content: "\e90b";
+  }
+  .icon-Email:before {
+    content: "\e90c";
+  }
+  .icon-Facebook-Filled:before {
+    content: "\e90d";
+  }
+  .icon-Facebook:before {
+    content: "\e90e";
+  }
+  .icon-Instagram:before {
+    content: "\e90f";
+  }
+  .icon-RSS:before {
+    content: "\e910";
+  }
+  .icon-Twitter-Filled:before {
+    content: "\e911";
+  }
+  .icon-Twitter:before {
+    content: "\e912";
+  }
+  .icon-Whatsapp-Filled:before {
+    content: "\e913";
+  }
+  .icon-Whatsapp:before {
+    content: "\e914";
+  }
+  .icon-QR:before {
+    content: "\e915";
+  }
+  .icon-Shop:before {
+    content: "\e916";
+  }
+  .icon-Headset-Filled:before {
+    content: "\e917";
+  }
+  .icon-Headset:before {
+    content: "\e918";
+  }
+  .icon-Pause:before {
+    content: "\e919";
+  }
+  .icon-Play-Filled:before {
+    content: "\e91a";
+  }
+  .icon-Play:before {
+    content: "\e91b";
+  }
+  .icon-Zoom:before {
+    content: "\e91c";
+  }
+  .icon-Car:before {
+    content: "\e91d";
+  }
+  .icon-Coupons:before {
+    content: "\e91e";
+  }
+  .icon-Deco--Home:before {
+    content: "\e91f";
+  }
+  .icon-Entertainment:before {
+    content: "\e920";
+  }
+  .icon-Fashion:before {
+    content: "\e921";
+  }
+  .icon-Healthy:before {
+    content: "\e922";
+  }
+  .icon-More:before {
+    content: "\e923";
+  }
+  .icon-Restaurant:before {
+    content: "\e924";
+  }
+  .icon-Shop-online:before {
+    content: "\e925";
+  }
+  .icon-Supermarket:before {
+    content: "\e926";
+  }
+  .icon-Trip:before {
+    content: "\e927";
+  }
+  .icon-Android:before {
+    content: "\e928";
+  }
+  .icon-Arrow-Down:before {
+    content: "\e929";
+  }
+  .icon-Arrow-Left:before {
+    content: "\e92a";
+  }
+  .icon-Arrow-Right:before {
+    content: "\e92b";
+  }
+  .icon-Arrow-Up:before {
+    content: "\e92c";
+  }
+  .icon-Bullet-Default:before {
+    content: "\e92d";
+    color: #5a5a5a;
+  }
+  .icon-Bullet-Outline:before {
+    content: "\e92e";
+    color: #5a5a5a;
+  }
+  .icon-Bullet-XS:before {
+    content: "\e92f";
+    color: #ccc;
+  }
+  .icon-Calendar-Filled:before {
+    content: "\e930";
+  }
+  .icon-Calendar:before {
+    content: "\e931";
+  }
+  .icon-Check-Mark:before {
+    content: "\e932";
+  }
+  .icon-CheckBox---Blank:before {
+    content: "\e933";
+  }
+  .icon-CheckBox---Filled:before {
+    content: "\e934";
+  }
+  .icon-Checked:before {
+    content: "\e935";
+  }
+  .icon-Clock:before {
+    content: "\e936";
+  }
+  .icon-Close:before {
+    content: "\e937";
+  }
+  .icon-Club-Filled:before {
+    content: "\e938";
+  }
+  .icon-Club .path1:before {
+    content: "\e939";
+    color: rgb(39, 39, 39);
+  }
+  .icon-Club .path2:before {
+    content: "\e93a";
+    margin-left: -1em;
+    color: rgb(0, 141, 255);
+  }
+  .icon-Comment:before {
+    content: "\e93b";
+  }
+  .icon-Copy:before {
+    content: "\e93c";
+  }
+  .icon-Eye-Filled:before {
+    content: "\e93d";
+  }
+  .icon-Eye-Off-Filled:before {
+    content: "\e93e";
+  }
+  .icon-Eye-Off:before {
+    content: "\e93f";
+  }
+  .icon-Eye:before {
+    content: "\e940";
+  }
+  .icon-Fast:before {
+    content: "\e941";
+  }
+  .icon-Filter:before {
+    content: "\e942";
+  }
+  .icon-Flag-Filled:before {
+    content: "\e943";
+  }
+  .icon-Flag:before {
+    content: "\e944";
+  }
+  .icon-Go:before {
+    content: "\e945";
+  }
+  .icon-Group:before {
+    content: "\e946";
+  }
+  .icon-Home-Filled:before {
+    content: "\e947";
+  }
+  .icon-Home:before {
+    content: "\e948";
+  }
+  .icon-Horizontal-Line:before {
+    content: "\e949";
+    color: #ccc;
+  }
+  .icon-Info-Filled:before {
+    content: "\e94a";
+  }
+  .icon-Info:before {
+    content: "\e94b";
+  }
+  .icon-IOS:before {
+    content: "\e94c";
+  }
+  .icon-Like-Filled:before {
+    content: "\e94d";
+  }
+  .icon-Like:before {
+    content: "\e94e";
+  }
+  .icon-Lock-Filled:before {
+    content: "\e94f";
+  }
+  .icon-Lock:before {
+    content: "\e950";
+  }
+  .icon-Map-filled:before {
+    content: "\e951";
+  }
+  .icon-Map:before {
+    content: "\e952";
+  }
+  .icon-Menu:before {
+    content: "\e953";
+  }
+  .icon-Order:before {
+    content: "\e954";
+  }
+  .icon-Radio:before {
+    content: "\e955";
+  }
+  .icon-Radio-1:before {
+    content: "\e956";
+  }
+  .icon-Reply-Filled:before {
+    content: "\e957";
+  }
+  .icon-Reply:before {
+    content: "\e958";
+  }
+  .icon-Search:before {
+    content: "\e959";
+  }
+  .icon-Sections-Filled:before {
+    content: "\e95a";
+  }
+  .icon-Sections:before {
+    content: "\e95b";
+  }
+  .icon-Settings-Filled:before {
+    content: "\e95c";
+  }
+  .icon-Settings:before {
+    content: "\e95d";
+  }
+  .icon-Share-Android:before {
+    content: "\e95e";
+  }
+  .icon-Share:before {
+    content: "\e95f";
+  }
+  .icon-Slow:before {
+    content: "\e960";
+  }
+  .icon-Star-Filled:before {
+    content: "\e961";
+  }
+  .icon-Star:before {
+    content: "\e962";
+  }
+  .icon-Timer:before {
+    content: "\e963";
+  }
+  .icon-Unlock-Filled:before {
+    content: "\e964";
+  }
+  .icon-Unlock:before {
+    content: "\e965";
+  }
+  .icon-User:before {
+    content: "\e966";
+  }
+  .icon-Vertical-Line:before {
+    content: "\e967";
+    color: #ccc;
+  }
