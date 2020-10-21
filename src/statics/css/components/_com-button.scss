@@ -1,0 +1,69 @@
+@import '../abstracts/variables';
+
+.com-button {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    display: inline-flex;
+    align-items: center;
+    padding: px(12) px(16);
+    border-radius: px(4);
+    
+    background: #0074c4;
+    border: 1px solid #0074c4;
+    color: white;
+    
+    font-size: px(12);
+    line-height: px(16);
+    font-weight: 700;
+
+    &.--xs {
+        padding: px(8) px(16);
+    }
+
+    &.--secondary {
+        background: white;
+        border: 1px solid #0074c4;
+        color: #0074c4;
+        &:hover {
+            background: #0074c4;
+            border: 1px solid #0074c4;
+            color: white;
+          }
+      }
+
+    &.--tertiary {
+        background: #f2f2f2;
+        border: 1px solid #f2f2f2;
+        color: #222;
+        &:hover {
+            background: #e4e4e4;
+            border: 1px solid #e4e4e4;
+            color: #222;
+          }
+      }
+
+      &.--special {
+        background: #ffff24;
+        border: 1px solid #ccc;
+        color: #222;
+        &:hover {
+            background: #000;
+            border: 1px solid #000;
+            color: #fff;
+          }
+      }
+
+    &:hover {
+        background: #049aff;
+        border: 1px solid #049aff;
+      }
+}
+
+
+
+.daro{
+    p {
+        margin-bottom: px(32);
+    }
+}

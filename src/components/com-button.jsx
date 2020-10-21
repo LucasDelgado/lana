@@ -1,4 +1,5 @@
 import React from 'react';
+import ComIcon from '../components/com-icon';
 
 const getTagProps = (tag, props) => {
     const { type, value, href, target } = props;
@@ -25,7 +26,8 @@ const ComButton = props => {
     };
 
     const _children = children && <span>{children}</span>;
-    const _icon = icon && <i className={`com-icon --${icon}`}>(i)</i>;
+//    const _icon = icon && <i className={`com-icon icon-${icon}`}></i>;
+    const _icon = icon && <ComIcon iconName={icon}/>;
 
     const content = tag !== 'input' ? [_children, _icon] : null;
 
