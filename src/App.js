@@ -3,6 +3,7 @@ import {Switch,Route,Link} from "react-router-dom";
 
 import Home from './pages/home';
 import SolicitudBaja from './pages/adq/solicitudBaja'
+import Daro from './pages/daro'
 
 import './App.css';
 
@@ -27,6 +28,9 @@ const App = () => {
             </Route>
             <Route path="/solicitud-de-baja">
               <SolicitudBaja />
+            </Route>
+            <Route path="/daro">
+              <Daro />
             </Route>
           </Switch>
         </main>
