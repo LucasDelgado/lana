@@ -1,0 +1,10 @@
+@import '../abstracts/variables';
+
+.com-label {
+    display: block;
+    margin-bottom:px(16);
+    cursor: pointer;
+    &:hover {
+        opacity: .8;
+    }
+}

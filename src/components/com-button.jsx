@@ -26,7 +26,6 @@ const ComButton = props => {
     };
 
     const _children = children && <span>{children}</span>;
-//    const _icon = icon && <i className={`com-icon icon-${icon}`}></i>;
     const _icon = icon && <ComIcon iconName={icon}/>;
 
     const content = tag !== 'input' ? [_children, _icon] : null;

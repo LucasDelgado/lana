@@ -3,54 +3,56 @@
 .com-button {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    margin-bottom:px(24);
 
     display: inline-flex;
     align-items: center;
     padding: px(12) px(16);
     border-radius: px(4);
     
-    background: #0074c4;
-    border: 1px solid #0074c4;
-    color: white;
+    background: $light-blue-500;
+    border: 1px solid $light-blue-500;
+    color: $neutral-white;
     
-    font-size: px(12);
+    font-size: px(14);
     line-height: px(16);
     font-weight: 700;
+    text-transform: uppercase;
 
     &.--xs {
         padding: px(8) px(16);
     }
 
     &.--secondary {
-        background: white;
-        border: 1px solid #0074c4;
-        color: #0074c4;
+        background: $neutral-white;
+        border: 1px solid $light-blue-500;
+        color: $light-blue-500;
         &:hover {
-            background: #0074c4;
-            border: 1px solid #0074c4;
-            color: white;
+            background: $light-blue-500;
+            border: 1px solid $light-blue-500;
+            color: $neutral-white;
           }
       }
 
     &.--tertiary {
-        background: #f2f2f2;
-        border: 1px solid #f2f2f2;
-        color: #222;
+        background: $light-neutral-200;
+        border: 1px solid $light-neutral-200;
+        color: $light-neutral-800;
         &:hover {
-            background: #e4e4e4;
-            border: 1px solid #e4e4e4;
-            color: #222;
+            background: $light-neutral-300;
+            border: 1px solid $light-neutral-300;
+            color: $light-neutral-800;
           }
       }
 
       &.--special {
         background: #ffff24;
-        border: 1px solid #ccc;
-        color: #222;
+        border: 1px solid $light-neutral-400;
+        color: $light-neutral-800;
         &:hover {
-            background: #000;
-            border: 1px solid #000;
-            color: #fff;
+            background: $neutral-black;
+            border: 1px solid $neutral-black;
+            color: $neutral-white;
           }
       }
 
@@ -58,12 +60,4 @@
         background: #049aff;
         border: 1px solid #049aff;
       }
-}
-
-
-
-.daro{
-    p {
-        margin-bottom: px(32);
-    }
 }

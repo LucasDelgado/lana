@@ -2,10 +2,10 @@ import React from 'react';
 //import '../../com-icon.css';
 
 const ComIcon = props => {
-    const { iconName, size } = props;
+    const { name, size } = props;
 
-    if (!iconName) return null;
-    return <i className={`com-icon icon-${iconName} ${size ? size : ``}`} />;
+    if (!name) return null;
+    return <i className={`com-icon icon-${name} ${size ? size : ``}`} />;
 };
  
 export default ComIcon;

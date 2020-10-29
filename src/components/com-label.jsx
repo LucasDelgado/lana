@@ -2,7 +2,7 @@ import React from 'react'
 import ComInput from './com-input';
 
 const ComLabel  = props => {
-    const { type, active, text, value, id, name, altClass } = props;
+    const { type, active, text, value, id, name, altClass, children } = props;
     const _type = type || 'checkbox';
 
     return (
@@ -16,8 +16,8 @@ const ComLabel  = props => {
                 active={active}
             />
             {
-            text
-                ? ( <>{text}</> )
+            text || children
+                ? ( <>{text || ``} {children || ``}</> )
                 : ( <></> )
             }
         </label>

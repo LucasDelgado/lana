@@ -1,0 +1,48 @@
+@import '../abstracts/variables';
+
+.com-input {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    margin-bottom:px(24);
+
+    display: block;
+    padding: px(12) px(16);
+    border-radius: px(4);
+    
+    background: $neutral-white;
+    border: 1px solid $light-neutral-300;
+
+    resize:none;
+    
+    &:focus {
+        transition: all 0.5s ease-in-out;
+        border-color: $light-blue-500;
+        &::placeholder {
+            color: $light-neutral-800;
+        }
+    }
+    &::placeholder {
+        color: $light-neutral-400; 
+    }
+    &[type=radio], &[type=checkbox] {
+        width: auto;
+        display: inline-flex;
+        align-items: center;
+        padding: 0;
+        border-radius: 0;
+        background: $neutral-white;
+        border: 1px solid $light-neutral-800;
+        margin-right: px(8);
+    }
+
+    .com-label & {
+        margin-bottom: 0;
+    }
+}
+
+
+main {
+    width: 500px;
+    margin: 0 auto;
+}
+
