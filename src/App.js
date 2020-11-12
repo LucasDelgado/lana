@@ -10,7 +10,8 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-        <header className="App-header">
+        <header className="header">
+        <a href="https://www.lanacion.com.ar/"><i class="com-logo logo-la-nacion"></i></a>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -34,8 +35,15 @@ const App = () => {
             </Route>
           </Switch>
         </main>
-      <footer>
-        Hola soy el footer
+      <footer className="footer">
+        <strong>Ayuda:</strong>
+        <ul>
+          <li><a href="#" title="Preguntas frecuentes">Preguntas frecuentes</a></li>
+          <li><a href="#" title="Reglamento de participación">Reglamento de participación</a></li>
+          <li><a href="#" title="Términos y condiciones generales">Términos y condiciones generales</a></li>
+          <li><a href="#" title="Términos y condiciones de Acceso Digital">Términos y condiciones de Acceso Digital</a></li>
+          <li><a href="#" title="Políticas de privacidad">Políticas de privacidad</a></li>
+        </ul>
       </footer>
     </div>
   );
