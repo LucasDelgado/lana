@@ -1,20 +1,23 @@
 .com-title {
-  font-family: SuecaBold;
+  //font-family: SuecaBold;
 //que hacemos con el font-weight? lo pasamos aparte? Ver Figma.
 //como configuramos la font del sitio? hice variables.
-  &.3xl {
+  &.xxxl {
     font-size: px(48);
     line-height: px(56);
+    font-family: SuecaBold;
   }
 
-  &.2xl {
+  &.xxl {
     font-size: px(40);
     line-height: px(52);
+    font-family: SuecaBold;
   }
 
   &.xl {
     font-size: px(32);
     line-height: px(40);
+    font-family: SuecaBold;
   }
   &.l {
     font-size: px(24);
@@ -31,9 +34,11 @@
   &.xs {
     font-size: px(18);
     line-height: px(26);
+    font-weight: 700;
   }
-  &.2xs {
+  &.xxs {
     font-size: px(16);
     line-height: px(24);
+    font-weight: 700;
   }
 }

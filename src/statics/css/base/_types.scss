@@ -448,3 +448,142 @@ $logo-club: '\e801';
 .logo-propiedades:before {
     content: $logo-propiedades;
 }
+
+.logo-la-nacion {
+  &.--color {
+    color: $light-blue-600;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// body {
+//   font-size: px(14);
+// }
+
+.com-list {
+  &.--inline {
+    display: inline-flex;
+      li:not(:last-child) {
+        position: relative;
+        padding-right: px(16);
+        margin-right: px(16);
+        &:after {
+          position: absolute;
+          font-family: 'Icons';
+          content: "\e92f";
+          color: #ccc;
+          font-size: px(24);
+          right: -12px;
+          top: -4px;
+        }
+      }
+  }
+}
+
+main {
+  padding: px(32) 0;
+}
+
+.footer {
+  padding: px(32) 0;
+  border-top: 1px solid $light-neutral-400;
+  .com-title {
+    display: inline-flex;
+    margin-right: px(24);
+  }
+}
+
+.header {
+  padding: px(16) 0;
+  border-bottom: 1px solid $light-neutral-400;
+  .lay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      >div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .com-image {
+          border-radius: 100%;
+          margin-right: px(8);
+        }
+        div {        
+          text-align: right;       
+          .com-link {
+            display: block;
+          }
+        }
+      }
+      ul {
+        margin-left: px(24);
+        border-left: 1px solid #5a5a5a;
+        padding-left: px(24);
+      }
+    }
+  }
+}
+
+.lay-sidebar {
+  > aside {
+    background: $light-neutral-50;
+    border: 1px solid $light-neutral-200;
+    border-radius: px(4);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.04);
+    margin-right: px(64);
+    dl {
+      padding: px(24);
+
+      dd {
+        margin-bottom: px(24);
+        a {
+          display: block;
+          padding-left: px(16);
+        }
+        
+      }
+      dt {
+        font-weight: 700;
+        margin-bottom: px(16);
+        padding-top: px(8);
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+
+      &.--secondary {
+        background: $light-neutral-200;
+      }
+    }
+  }
+
+  >section {
+
+  }
+}

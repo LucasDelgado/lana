@@ -10,47 +10,72 @@ import Textarea from '../../components/com-textarea';
 
 const SolicitudBaja = (props) => {
     return ( 
+        
         <>
-        <aside>
-            <nav></nav>
-        </aside>
-        <main>
-            <Link link="#">
-                <Icon name="arrow-left"></Icon> Volver a ver suscripciones
-            </Link>
-            
-            <Title text="Solicitud de Baja" tag="h1" size="xl"></Title>
-            
-            <Link link="#" text="Ver historial de solicitides de baja" />
+            <div className="lay-sidebar">
+                <aside>
+                    <nav>
+                        <dl>
+                            <dt>Mi cuenta</dt>
+                            <dd><a href="#" className="com-link">Mi usuario</a></dd>
+                            <dd><a href="#" className="com-link">Datos personales</a></dd>
+                            <dt>Club LA NACION</dt>
+                            <dd><a href="#" className="com-link">Vincular credencial</a></dd>
+                            <dd><a href="#" className="com-link">Mis credenciales</a></dd>
+                            <dd><a href="#" className="com-link">Mis beneficios</a></dd>
+                            <dt>Mis suscripciones</dt>
+                            <dd><a href="#" className="com-link">Ver suscripciones</a></dd>
+                            <dd><a href="#" className="com-link">Mis credenciales</a></dd>
+                            <dd><a href="#" className="com-link">Cambiar domicilio de entrega</a></dd>
+                            <dt>Mis reclamos</dt>
+                            <dd><a href="#" className="com-link">De entrega</a></dd>
+                            <dd><a href="#" className="com-link">Tarjeta Club</a></dd>
+                        </dl>
+                        <dl className="--secondary">
+                            <dt>Mi cuenta</dt>
+                            <dd><a href="#" className="com-link">Mi usuario</a></dd>
+                            <dd><a href="#" className="com-link">Datos personales</a></dd>
+                        </dl>
+                    </nav>
+                </aside>
+                <section>
+                    <Link link="#">
+                        <Icon name="arrow-left"></Icon> Volver a ver suscripciones
+                    </Link>
+                    
+                    <Title text="Solicitud de Baja" tag="h1" size="xl"></Title>
+                    
+                    <Link link="#" text="Ver historial de solicitudes de baja" />
 
-            <ol>
-                <li>Seleccioná las suscripciones en las cuales querés solicitar la baja:</li>
-            </ol>
-            
-            <Label text="Club LA NACION + Acceso Digital" value="3 meses" id="01" name="01"/>
-            <Label text="LN Sábado o Domingo 100% Dto. 3 meses" value="3 meses" id="02" name="02"/>
-            <Label value="3 meses" id="03" name="03">Acceso Digital (suscripción realizada con Google)</Label>
-            <strong>Teléfono de contacto</strong>
-            <Input type="text" placeholder="00-0000-0000"/>
+                    <ol>
+                        <li>Seleccioná las suscripciones en las cuales querés solicitar la baja:</li>
+                    </ol>
+                    
+                    <Label text="Club LA NACION + Acceso Digital" value="3 meses" id="01" name="01"/>
+                    <Label text="LN Sábado o Domingo 100% Dto. 3 meses" value="3 meses" id="02" name="02"/>
+                    <Label value="3 meses" id="03" name="03">Acceso Digital (suscripción realizada con Google)</Label>
+                    <strong>Teléfono de contacto</strong>
+                    <Input type="text" placeholder="00-0000-0000"/>
 
-            <strong>Teléfono alternativo</strong>
-            <Input type="text" placeholder="00-0000-0000"/>
+                    <strong>Teléfono alternativo</strong>
+                    <Input type="text" placeholder="00-0000-0000"/>
 
-            <strong>E-mail de contacto</strong>
-            <Input type="text" placeholder="Ingresá un e-mail de contacto"/>
+                    <strong>E-mail de contacto</strong>
+                    <Input type="text" placeholder="Ingresá un e-mail de contacto"/>
 
 
-            <strong>Horario de contacto</strong>
-            <Label text="De 8 a 14" type="radio" value="1" id="1" name="time"/>
-            <Label text="De 14 a 20" type="radio" value="2" id="2" name="time"/>
+                    <strong>Horario de contacto</strong>
+                    <Label text="De 8 a 14" type="radio" value="1" id="1" name="time"/>
+                    <Label text="De 14 a 20" type="radio" value="2" id="2" name="time"/>
 
-            <strong>Motivo de la baja</strong>
-            <Textarea></Textarea>
-            <Button text="Solicitar baja">Solicitar baja</Button>
-            <Button value="Solicitar baja"/>
-
-        </main>
+                    <strong>Motivo de la baja</strong>
+                    <Textarea></Textarea>
+                    <Button text="Solicitar baja">Solicitar baja</Button>
+                    <Button value="Solicitar baja"/>
+                </section>
+            </div>
         </>
+       
      );
 }
  
