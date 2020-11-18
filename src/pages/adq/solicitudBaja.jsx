@@ -51,12 +51,6 @@ const SolicitudBaja = (props) => {
                         </ol>
                     </nav>
 
-
-                    {/* <Link link="#">
-                            <Icon name="arrow-left"></Icon> Volver a ver suscripciones
-                        </Link> */}
-
-
                     <div className="mod-title">
                         <Title text="Solicitud de baja" tag="h1" size="xl"></Title>
                         <Link link="#" text="Ver historial de solicitudes de baja" />
@@ -90,7 +84,7 @@ const SolicitudBaja = (props) => {
                     </article>
 
                     <div className="mod-toast --success">
-                        <Button icon="close" mod="--tertiary" />
+                        <Button icon="close" mod="--tertiary" title="Cerrar" />
                         <Icon name="check-mark" />
                         <div className="mod-description">
                             <h3 className="com-title s">Información importante</h3>
@@ -99,8 +93,8 @@ const SolicitudBaja = (props) => {
                     </div>
                     
                     <div className="mod-toast --warning">
-                        <Button icon="close" mod="--tertiary" />
-                        <Icon name="check-mark" />
+                        <Button icon="close" mod="--tertiary" title="Cerrar" />
+                        <Icon name="error-warning" />
                         <div className="mod-description">
                             <h3 className="com-title s">Información importante</h3>
                             <span className="">Bajada del error, lorem ipsum.</span>
@@ -108,7 +102,7 @@ const SolicitudBaja = (props) => {
                     </div>
 
                     <div className="mod-toast --info">
-                        <Button icon="close" mod="--tertiary" />
+                        <Button icon="close" mod="--tertiary" title="Cerrar" />
                         <Icon name="info" />
                         <div className="mod-description">
                             <h3 className="com-title s">Información importante</h3>
@@ -117,8 +111,8 @@ const SolicitudBaja = (props) => {
                     </div>
 
                     <div className="mod-toast --alert">
-                        <Button icon="close" mod="--tertiary" />
-                        <Icon name="check-mark" />
+                        <Button icon="close" mod="--tertiary" title="Cerrar" />
+                        <Icon name="alert" />
                         <div className="mod-description">
                             <h3 className="com-title s">Información importante</h3>
                             <span className="">Bajada del error, lorem ipsum.</span>

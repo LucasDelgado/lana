@@ -18,6 +18,11 @@
     line-height: px(16);
     font-weight: 700;
     text-transform: uppercase;
+    
+    &:hover {
+      background: $light-blue-400;
+      border: 1px solid $light-blue-400;
+    }
 
     &.--xs {
         padding: px(8) px(16);
@@ -45,19 +50,15 @@
           }
       }
 
-      &.--special {
-        background: #ffff24;
-        border: 1px solid $light-neutral-400;
-        color: $light-neutral-800;
-        &:hover {
-            background: $neutral-black;
-            border: 1px solid $neutral-black;
-            color: $neutral-white;
-          }
-      }
+    &.--special {
+      background: $yellow-500;
+      border: 1px solid $light-neutral-400;
+      color: $light-neutral-800;
+      &:hover {
+          background: $neutral-black;
+          border: 1px solid $neutral-black;
+          color: $neutral-white;
+        }
+    }
 
-    &:hover {
-        background: #049aff;
-        border: 1px solid #049aff;
-      }
 }

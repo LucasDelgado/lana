@@ -2,12 +2,12 @@ import React from 'react';
 import ComIcon from '../components/com-icon';
 
 const getTagProps = (tag, props) => {
-    const { type, value, href, target } = props;
+    const { type, value, href, target, title } = props;
 
     const propsByTag = {
-        a: { href, target },
-        input: { type: type || 'button', value },
-        button: { type: type || 'button' }
+        a: { href, target, title },
+        input: { type: type || 'button', value, title },
+        button: { type: type || 'button', title }
     };
 
     return propsByTag[tag];
