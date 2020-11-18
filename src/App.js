@@ -19,12 +19,12 @@ const App = () => {
             <div className="left">
               <Logo name="la-nacion" link="#" mod="--color" title="LA NACION"/>
             </div>
-            <div className="right">
+            <div className="right 4xs">
               <div>
                 <Image src="https://via.placeholder.com/32" alt="Nombre usuario"/>
                 <div>
                   <ComLink link="#">mail@lanacion.com.ar</ComLink>
-                  <span className="com-text">Estado de usuario</span>
+                  <span className="com-text 5xs">Estado de usuario</span>
                 </div>
               </div>
               <ul className="com-list --inline">

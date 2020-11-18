@@ -109,3 +109,30 @@
 }
 
 
+
+
+
+@mixin _2xs {
+    font-size: px(16);
+    line-height: px(24);
+}
+
+@mixin _3xs {
+    font-size: px(15);
+    line-height: px(17);
+}
+
+@mixin _4xs {
+    font-size: px(14);
+    line-height: px(16);
+}
+
+@mixin _5xs {
+    font-size: px(12);
+    line-height: px(16);
+}
+
+@mixin _6xs {
+    font-size: px(11);
+    line-height: px(16);
+}

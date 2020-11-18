@@ -1,23 +1,39 @@
 .com-text {
     //que hacemos con el font-weight? lo pasamos aparte? Ver Figma.
     //como configuramos la font del sitio? hice variables.
-    &.3xs {
-        font-size: px(15);
-        line-height: px(17);
-    }
+    // &.3xs {
+    //     font-size: px(15);
+    //     line-height: px(17);
+    // }
 
-    &.4xs {
-        font-size: px(14);
-        line-height: px(16);
-    }
+    // &.4xs {
+    //     font-size: px(14);
+    //     line-height: px(16);
+    // }
 
-    &.5xs {
-        font-size: px(12);
-        line-height: px(16);
-    }
+    // &.5xs {
+    //     font-size: px(12);
+    //     line-height: px(16);
+    // }
 
-    &.6xs {
-        font-size: px(11);
-        line-height: px(16);
-    }
+    // &.6xs {
+    //     font-size: px(11);
+    //     line-height: px(16);
+    // }
+}
+
+[class~="3xs"] {
+    @include _3xs;
+}
+
+[class~="4xs"] {
+    @include _4xs;
+}
+
+[class~="5xs"] {
+    @include _5xs;
+}
+
+[class~="6xs"] {
+    @include _6xs;
 }
