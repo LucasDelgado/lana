@@ -3,6 +3,7 @@ import {Switch,Route,Link} from "react-router-dom";
 
 import Home from './pages/home';
 import SolicitudBaja from './pages/adq/solicitudBaja'
+import VincularCredencial from './pages/adq/vincularCredencial'
 import Daro from './pages/daro'
 import Logo from '../src/components/com-logo'
 import Title from '../src/components/com-title'
@@ -41,6 +42,9 @@ const App = () => {
             </Route>
             <Route path="/solicitud-de-baja">
               <SolicitudBaja />
+            </Route>
+            <Route path="/vincular-credencial">
+              <VincularCredencial />
             </Route>
             <Route path="/daro">
               <Daro />

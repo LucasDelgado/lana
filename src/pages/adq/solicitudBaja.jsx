@@ -7,6 +7,7 @@ import Link from '../../components/com-link';
 import Icon from '../../components/com-icon';
 import Image from '../../components/com-image';
 import Textarea from '../../components/com-textarea';
+import Menu from '../../components/mod-menu';
 
 
 const SolicitudBaja = (props) => {
@@ -15,33 +16,7 @@ const SolicitudBaja = (props) => {
         <>
             <div className="lay-sidebar">
                 <aside>
-                    <nav>
-                        <dl className="4xs">
-                            <dt>Mi cuenta</dt>
-                            <dd><a href="#" className="com-link">Mi usuario</a></dd>
-                            <dd><a href="#" className="com-link">Datos personales</a></dd>
-                            <dt>Club LA NACION</dt>
-                            <dd><a href="#" className="com-link">Vincular credencial</a></dd>
-                            <dd><a href="#" className="com-link">Mis credenciales</a></dd>
-                            <dd><a href="#" className="com-link">Mis beneficios</a></dd>
-                            <dt>Mis suscripciones</dt>
-                            <dd><a href="#" className="com-link">Ver suscripciones</a></dd>
-                            <dd><a href="#" className="com-link">Suspender por vacaciones</a></dd>
-                            <dd><a href="#" className="com-link">Cambiar domicilio de entrega</a></dd>
-                            <dt>Mis reclamos</dt>
-                            <dd><a href="#" className="com-link">De entrega</a></dd>
-                            <dd><a href="#" className="com-link">Tarjeta Club</a></dd>
-                            <dt>Mis pagos</dt>
-                            <dd><a href="#" className="com-link">Ver facturas</a></dd>
-                            <dd><a href="#" className="com-link">Pagos pendientes</a></dd>
-                            <dd><a href="#" className="com-link">Cambiar forma de pago</a></dd>
-                        </dl>
-                        <dl className="--secondary">
-                            <dt>Mi actividad</dt>
-                            <dd><a href="#" className="com-link">Newsletters</a></dd>
-                            <dd><a href="#" className="com-link">Mis comentarios</a></dd>
-                        </dl>
-                    </nav>
+                    <Menu />
                 </aside>
                 <section>
                     <nav className="breadcrumb">
@@ -65,59 +40,7 @@ const SolicitudBaja = (props) => {
                         </div>
                     </fieldset>
                     
-                    <article className="mod-article">
-                        <div className="mod-description">
-                            <h3 className="com-title s">¡Agregá Club LA NACIÓN a tu suscripción!</h3>
-                            <p>Dejanos tus datos y empezá a disfrutar de los beneficios.</p>
-                            <Button text="Vincular tarjeta">Vincular tarjeta</Button>
-                        </div>
-                    </article>
-
-                    <article className="mod-article">
-                        <div className="mod-description">
-                            <h3 className="com-title s">¡Agregá Club LA NACIÓN a tu suscripción!</h3>
-                            <p>Dejanos tus datos y empezá a disfrutar de los beneficios. <Link link="#">Completá el formulario</Link> o <Link link="#">llamanos al 5199-4740</Link></p>
-                        </div>
-                        <div className="mod-media">
-                            <Image src="https://via.placeholder.com/180x140" alt="Nombre usuario"/>
-                        </div>
-                    </article>
-
-                    <div className="mod-toast --success">
-                        <Button icon="close" mod="--tertiary" title="Cerrar" />
-                        <Icon name="check-mark" />
-                        <div className="mod-description">
-                            <h3 className="com-title s">Información importante</h3>
-                            <span className="">Bajada del error, lorem ipsum.</span>
-                        </div>
-                    </div>
                     
-                    <div className="mod-toast --warning">
-                        <Button icon="close" mod="--tertiary" title="Cerrar" />
-                        <Icon name="error-warning" />
-                        <div className="mod-description">
-                            <h3 className="com-title s">Información importante</h3>
-                            <span className="">Bajada del error, lorem ipsum.</span>
-                        </div>
-                    </div>
-
-                    <div className="mod-toast --info">
-                        <Button icon="close" mod="--tertiary" title="Cerrar" />
-                        <Icon name="info" />
-                        <div className="mod-description">
-                            <h3 className="com-title s">Información importante</h3>
-                            <span className="">Bajada del error, lorem ipsum.</span>
-                        </div>
-                    </div>
-
-                    <div className="mod-toast --alert">
-                        <Button icon="close" mod="--tertiary" title="Cerrar" />
-                        <Icon name="alert" />
-                        <div className="mod-description">
-                            <h3 className="com-title s">Información importante</h3>
-                            <span className="">Bajada del error, lorem ipsum.</span>
-                        </div>
-                    </div>
                     <fieldset>
                         <legend>2. Ingresá los datos donde podamos contactarte para gestionar la baja:</legend>
                         <div className="mod-input">
