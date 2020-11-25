@@ -1,33 +1,12 @@
 @import '../abstracts/variables';
 @import '../abstracts/mixins';
 
-
-
 body {
-  @include _2xs;
+  @include textsize(16,24);
 }
 
 main {
   padding: px(32) 0;
-}
-
-.com-list {
-  &.--inline {
-    display: inline-flex;
-      li:not(:last-child) {
-        position: relative;
-        padding-right: px(16);
-        margin-right: px(16);
-        &:after {
-          position: absolute;
-          font-family: 'Icons';
-          content: "\e909";
-          color: #ccc;
-          font-size: px(24);
-          right: -12px;
-        }
-      }
-  }
 }
 
 .header {
@@ -111,15 +90,17 @@ main {
     }
   }
 
-  >section {
+  > section {
     width: calc(100% - 390px);
   }
 }
-  
+
+
+//para refactor
 .mod-title {
   margin-bottom: px(32);
   border-bottom: 1px solid #ccc;
-  padding-bottom: px(16) ;
+  padding-bottom: px(16);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
