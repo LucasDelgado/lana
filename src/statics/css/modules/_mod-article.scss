@@ -1,0 +1,16 @@
+.mod-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: px(40);
+    .mod-description {
+        padding-right: px(40);
+        .com-title {
+            margin-bottom: px(16);
+        }
+        p {
+            margin-bottom: px(16);
+        }
+    }
+    
+}

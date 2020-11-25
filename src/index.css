@@ -834,6 +834,66 @@ a:hover {
   color: #006998;
 }
 
+[class~="6xs"] {
+  font-size: 0.6875rem;
+  line-height: 1rem;
+}
+
+[class~="5xs"] {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+[class~="4xs"] {
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+[class~="3xs"] {
+  font-size: 0.9375rem;
+  line-height: 1.0625rem;
+}
+
+[class~="2xs"] {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+[class~="xs"] {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+}
+
+[class~="s"] {
+  font-size: 1.1875rem;
+  line-height: 1.875rem;
+}
+
+[class~="m"] {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+[class~="l"] {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+[class~="xl"] {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+[class~="2xl"] {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
+
+[class~="3xl"] {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
 .row {
   display: -ms-flexbox;
   display: -webkit-box;
@@ -2080,66 +2140,6 @@ a:hover {
 
 .com-link:hover {
   opacity: .8;
-}
-
-[class~="6xs"] {
-  font-size: 0.6875rem;
-  line-height: 1rem;
-}
-
-[class~="5xs"] {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-[class~="4xs"] {
-  font-size: 0.875rem;
-  line-height: 1rem;
-}
-
-[class~="3xs"] {
-  font-size: 0.9375rem;
-  line-height: 1.0625rem;
-}
-
-[class~="2xs"] {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-[class~="xs"] {
-  font-size: 1.125rem;
-  line-height: 1.625rem;
-}
-
-[class~="s"] {
-  font-size: 1.1875rem;
-  line-height: 1.875rem;
-}
-
-[class~="m"] {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-[class~="l"] {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-[class~="xl"] {
-  font-size: 2rem;
-  line-height: 2.5rem;
-}
-
-[class~="2xl"] {
-  font-size: 2.5rem;
-  line-height: 3.25rem;
-}
-
-[class~="3xl"] {
-  font-size: 3rem;
-  line-height: 3.5rem;
 }
 
 .com-title.3xl {

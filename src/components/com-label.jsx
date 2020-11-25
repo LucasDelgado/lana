@@ -6,7 +6,7 @@ const ComLabel  = props => {
     //const _type = type || 'checkbox';
  
     return (        
-        <label className={`com-label ${size || ''} ${mod || ''} ${type ? '--for' : ''} ${active ? '--active' : ''}`} htmlFor={id}>
+        <label className={`com-label ${size || '4xs'} ${mod || ''} ${type ? '--for' : ''} ${active ? '--active' : ''}`} htmlFor={id}>
             {
             type
                 ? <ComInput

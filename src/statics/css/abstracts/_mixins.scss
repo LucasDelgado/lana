@@ -110,67 +110,15 @@
 
 
 
+//=======================================
+// MIXIN TAMAÑOS DE FUENTES
+//=======================================
 
-@mixin _6xs {
-    font-size: px(11);
-    line-height: px(16);
-}
-
-@mixin _5xs {
-    font-size: px(12);
-    line-height: px(16);
+@mixin textsize ($size, $line) {
+    font-size: px($size);
+    line-height: px($line);
 }
 
-@mixin _4xs {
-    font-size: px(14);
-    line-height: px(16);
-}
-
-@mixin _3xs {
-    font-size: px(15);
-    line-height: px(17);
-}
-
-@mixin _2xs {
-    font-size: px(16);
-    line-height: px(24);
-}
-
-@mixin _xs {
-    font-size: px(18);
-    line-height: px(26);
-}
-
-@mixin _s {
-    font-size: px(19);
-    line-height: px(30);
-}
-
-@mixin _m {
-    font-size: px(20);
-    line-height: px(28);
-}
-
-@mixin _l {
-    font-size: px(24);
-    line-height: px(32);
-}
- 
-@mixin _xl {
-    font-size: px(32);
-    line-height: px(40);
-}
-  
-@mixin _2xl {
-    font-size: px(40);
-    line-height: px(52);
-}  
-  
-@mixin _3xl {
-    font-size: px(48);
-    line-height: px(56);
-}  
-  
   
   
   

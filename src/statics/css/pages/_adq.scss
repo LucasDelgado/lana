@@ -4,223 +4,144 @@
 
 
 body {
-    @include _2xs;
-  }
-  
-  .com-list {
-    &.--inline {
-      display: inline-flex;
-        li:not(:last-child) {
-          position: relative;
-          padding-right: px(16);
-          margin-right: px(16);
-          &:after {
-            position: absolute;
-            font-family: 'Icons';
-            content: "\e909";
-            color: #ccc;
-            font-size: px(24);
-            right: -12px;
-          }
-        }
-    }
-  }
-  
-  main {
-    padding: px(32) 0;
-  }
-  
-  .footer {
-    padding: px(32) 0;
-    border-top: 1px solid $light-neutral-400;
-    .com-title {
-      display: inline-flex;
-      margin-right: px(24);
-    }
-  }
-  
-  .header {
-    padding: px(16) 0;
-    border-bottom: 1px solid $light-neutral-400;
-    .lay {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-  
-      .right {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        >div {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          .com-image {
-            border-radius: 100%;
-            margin-right: px(8);
-          }
-          div {        
-            text-align: right;       
-            .com-link {
-              display: block;
-            }
-          }
-        }
-        ul {
-          margin-left: px(24);
-          border-left: 1px solid #5a5a5a;
-          padding-left: px(24);
+  @include _2xs;
+}
+
+main {
+  padding: px(32) 0;
+}
+
+.com-list {
+  &.--inline {
+    display: inline-flex;
+      li:not(:last-child) {
+        position: relative;
+        padding-right: px(16);
+        margin-right: px(16);
+        &:after {
+          position: absolute;
+          font-family: 'Icons';
+          content: "\e909";
+          color: #ccc;
+          font-size: px(24);
+          right: -12px;
         }
       }
-    }
   }
-  
-  .lay-sidebar {
-    > aside {
-      width: px(270);
-      height: fit-content;
-      background: $light-neutral-50;
-      border: 1px solid $light-neutral-200;
-      border-radius: px(4);
-      box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.04);
-      margin: 0 px(80) 0 px(40);
-      dl {
-        padding: px(24);
-  
-        dd {
-          margin-bottom: px(24);
-          a {
-            display: block;
-            padding-left: px(16);
-          }
-          
-        }
-        dt {
-          font-weight: 700;
-          margin-bottom: px(16);
-          padding-top: px(8);
-          &:first-child {
-            padding-top: 0;
-          }
-        }
-  
-        &.--secondary {
-          background: $light-neutral-200;
-        }
-      }
-    }
-  
-    >section {
-      width: calc(100% - 390px);
-    }
-  }
-  
-  .mod-title {
-    margin-bottom: px(32);
-    border-bottom: 1px solid #ccc;
-    padding-bottom: px(16) ;
-    display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-  }
-  
-  .breadcrumb {
-    margin-bottom: px(32);
-  }
-  
-  fieldset {
-    margin-bottom: px(32);
-    legend {
-      margin-bottom: px(24);
-    }
-    
-    .mod-input {
-      margin-bottom: px(32);
-      
-      span {
-        display: block;
-        padding-top: px(8);
-      }
-    }
-  }
+}
 
-
-
-
-.mod-article {
+.header {
+  padding: px(16) 0;
+  border-bottom: 1px solid $light-neutral-400;
+  .lay {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: px(40);
-    .mod-description {
-        padding-right: px(40);
-        .com-title {
-            margin-bottom: px(16);
+    align-items: center;
+
+    .right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      >div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .com-image {
+          border-radius: 100%;
+          margin-right: px(8);
         }
-        p {
-            margin-bottom: px(16);
+        div {        
+          text-align: right;       
+          .com-link {
+            display: block;
+          }
         }
+      }
+      ul {
+        margin-left: px(24);
+        border-left: 1px solid #5a5a5a;
+        padding-left: px(24);
+      }
     }
-    
+  }
 }
 
-
-.mod-toast {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: px(40);
-    padding: px(16);
-
+.footer {
+  padding: px(32) 0;
+  border-top: 1px solid $light-neutral-400;
+  .com-title {
+    display: inline-flex;
+    margin-right: px(24);
+  }
+}
+   
+.lay-sidebar {
+  > aside {
+    width: px(270);
+    height: fit-content;
     background: $light-neutral-50;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid $light-neutral-200;
     border-radius: px(4);
-    box-sizing: border-box;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.04);
+    margin: 0 px(80) 0 px(40);
+    dl {
+      padding: px(24);
 
-    border: 1px solid #000;
-
-    >.com-icon {
-        border-right: 1px solid #ccc;
-        margin-right: 16px;
-        padding: 8px 12px 8px 0;
-        height: max-content;
-    }
-    .com-button {
-        position: absolute;
-        right: px(16);
-        padding: px(4);
-    }
-    .mod-description {
-        margin-right: px(50);
-    }
-
-    &.--success {
-        border-color: $green-700;
-        .com-title, >.com-icon {
-            color: $green-700;
+      dd {
+        margin-bottom: px(24);
+        a {
+          display: block;
+          padding-left: px(16);
         }
-    }
-
-    &.--warning {
-        border-color: $red-500;
-        .com-title, >.com-icon {
-            color: $red-500;
+        
+      }
+      dt {
+        font-weight: 700;
+        margin-bottom: px(16);
+        padding-top: px(8);
+        &:first-child {
+          padding-top: 0;
         }
+      }
+
+      &.--secondary {
+        background: $light-neutral-200;
+      }
     }
+  }
+
+  >section {
+    width: calc(100% - 390px);
+  }
+}
+  
+.mod-title {
+  margin-bottom: px(32);
+  border-bottom: 1px solid #ccc;
+  padding-bottom: px(16) ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.breadcrumb {
+  margin-bottom: px(32);
+}
+
+fieldset {
+  margin-bottom: px(32);
+  legend {
+    margin-bottom: px(24);
+  }
+  
+  .mod-input {
+    margin-bottom: px(32);
     
-    &.--info {
-        border-color: $light-blue-400;
-        .com-title, >.com-icon {
-            color: $light-blue-400;
-        }
+    span {
+      display: block;
+      padding-top: px(8);
     }
-
-    &.--alert {
-        border-color: $orange-500;
-        .com-title, >.com-icon {
-            color: $orange-500;
-        }
-    }
+  }
 }

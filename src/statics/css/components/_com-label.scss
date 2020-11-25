@@ -2,8 +2,6 @@
 
 .com-label {
     display: block;
-        //para micuenta
-        @include _4xs;
 
     &.--for {
         margin-bottom:px(16);

@@ -1,0 +1,57 @@
+.mod-toast {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: px(40);
+    padding: px(16);
+
+    background: $light-neutral-50;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    border-radius: px(4);
+    box-sizing: border-box;
+
+    border: 1px solid #000;
+
+    >.com-icon {
+        border-right: 1px solid #ccc;
+        margin-right: 16px;
+        padding: 8px 12px 8px 0;
+        height: max-content;
+    }
+    .com-button {
+        position: absolute;
+        right: px(16);
+        padding: px(4);
+    }
+    .mod-description {
+        margin-right: px(50);
+    }
+
+    &.--success {
+        border-color: $green-700;
+        .com-title, >.com-icon {
+            color: $green-700;
+        }
+    }
+
+    &.--warning {
+        border-color: $red-500;
+        .com-title, >.com-icon {
+            color: $red-500;
+        }
+    }
+    
+    &.--info {
+        border-color: $light-blue-400;
+        .com-title, >.com-icon {
+            color: $light-blue-400;
+        }
+    }
+
+    &.--alert {
+        border-color: $orange-500;
+        .com-title, >.com-icon {
+            color: $orange-500;
+        }
+    }
+}
