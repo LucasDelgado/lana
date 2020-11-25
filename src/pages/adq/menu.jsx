@@ -1,8 +1,8 @@
 import React from 'react'
-import Link from './com-link';
+import Link from '../../components/com-link';
 
 const ModMenu  = props => {
-    const { type, active, text, value, id, name, size, mod, children } = props;
+    //const { type, active, text, value, id, name, size, mod, children } = props;
  
     return (        
         <nav>

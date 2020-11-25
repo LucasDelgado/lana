@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from './com-button';
-import Icon from './com-icon';
-import Title from './com-title';
+import Button from '../components/com-button';
+import Icon from '../components/com-icon';
+import Title from '../components/com-title';
 
 
 const ModToast  = props => {
@@ -28,7 +28,3 @@ const ModToast  = props => {
 }
 
 export default ModToast;
-
-
-
-

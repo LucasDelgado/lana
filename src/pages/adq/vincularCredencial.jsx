@@ -6,8 +6,9 @@ import Button from '../../components/com-button';
 import Link from '../../components/com-link';
 import Icon from '../../components/com-icon';
 import Image from '../../components/com-image';
-import Menu from '../../components/mod-menu';
-import Toast from '../../components/mod-toast';
+import Menu from './menu';
+import Toast from '../../modules/mod-toast';
+import Article from '../../modules/mod-article';
 
 
 const SolicitudBaja = (props) => {
@@ -34,24 +35,10 @@ const SolicitudBaja = (props) => {
                     <Toast status="info" title="Información importante" text="Bajada del error, lorem ipsum." />
                     <Toast status="alert" title="Información importante" text="Bajada del error, lorem ipsum." />
                     
-                    
-                    <article className="mod-article">
-                        <div className="mod-description">
-                            <h3 className="com-title s">¡Agregá Club LA NACIÓN a tu suscripción!</h3>
-                            <p>Dejanos tus datos y empezá a disfrutar de los beneficios.</p>
-                            <Button text="Vincular tarjeta">Vincular tarjeta</Button>
-                        </div>
-                    </article>
+                    <Article title="¡Agregá Club LA NACION a tu suscripción!" buttonText="Vincular tarjeta" imageUrl="https://via.placeholder.com/180x140" />
+                    <Article title="¡Agregá Club LA NACION a tu suscripción!" imageUrl="https://via.placeholder.com/180x140" />
+                    <Article title="¡Agregá Club LA NACION a tu suscripción!" buttonText="Vincular tarjeta" />
 
-                    <article className="mod-article">
-                        <div className="mod-description">
-                            <h3 className="com-title s">¡Agregá Club LA NACIÓN a tu suscripción!</h3>
-                            <p>Dejanos tus datos y empezá a disfrutar de los beneficios. <Link link="#">Completá el formulario</Link> o <Link link="#">llamanos al 5199-4740</Link></p>
-                        </div>
-                        <div className="mod-media">
-                            <Image src="https://via.placeholder.com/180x140" alt="Nombre usuario"/>
-                        </div>
-                    </article>
                 </section>
             </div>
         </>

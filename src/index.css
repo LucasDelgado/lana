@@ -264,7 +264,7 @@ a:hover {
   content: "\e906";
 }
 
-.icon-bullet-default:before {
+.icon-bullet:before {
   content: "\e907";
   color: #5a5a5a;
 }
@@ -343,7 +343,7 @@ a:hover {
   content: "\e919";
 }
 
-.icon-deco--home:before {
+.icon-deco-home:before {
   content: "\e91a";
 }
 
@@ -544,11 +544,11 @@ a:hover {
   content: "\e94b";
 }
 
-.icon-radio:before {
+.icon-radio-filled:before {
   content: "\e94c";
 }
 
-.icon-radio-1:before {
+.icon-radio-blank:before {
   content: "\e94d";
 }
 
@@ -2082,13 +2082,8 @@ a:hover {
   opacity: .8;
 }
 
-[class~="3xs"] {
-  font-size: 0.9375rem;
-  line-height: 1.0625rem;
-}
-
-[class~="4xs"] {
-  font-size: 0.875rem;
+[class~="6xs"] {
+  font-size: 0.6875rem;
   line-height: 1rem;
 }
 
@@ -2097,54 +2092,77 @@ a:hover {
   line-height: 1rem;
 }
 
-[class~="6xs"] {
-  font-size: 0.6875rem;
+[class~="4xs"] {
+  font-size: 0.875rem;
   line-height: 1rem;
 }
 
-.com-title.xxxl {
-  font-size: 3rem;
-  line-height: 3.5rem;
-  font-family: SuecaBold;
+[class~="3xs"] {
+  font-size: 0.9375rem;
+  line-height: 1.0625rem;
 }
 
-.com-title.xxl {
-  font-size: 2.5rem;
-  line-height: 3.25rem;
-  font-family: SuecaBold;
+[class~="2xs"] {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
-.com-title.xl {
-  font-size: 2rem;
-  line-height: 2.5rem;
-  font-family: SuecaBold;
+[class~="xs"] {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
 }
 
-.com-title.l {
-  font-size: 1.5rem;
-  line-height: 2rem;
+[class~="s"] {
+  font-size: 1.1875rem;
+  line-height: 1.875rem;
 }
 
-.com-title.m {
+[class~="m"] {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
+[class~="l"] {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+[class~="xl"] {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+[class~="2xl"] {
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
+
+[class~="3xl"] {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+.com-title.3xl {
+  font-family: SuecaBold;
+}
+
+.com-title.2xl {
+  font-family: SuecaBold;
+}
+
+.com-title.xl {
+  font-family: SuecaBold;
+}
+
 .com-title.s {
-  font-size: 1.1875rem;
-  line-height: 1.875rem;
   font-weight: 700;
 }
 
 .com-title.xs {
-  font-size: 1.125rem;
-  line-height: 1.625rem;
   font-weight: 700;
 }
 
-.com-title.xxs {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.com-title.2xs {
   font-weight: 700;
 }
 

@@ -7,7 +7,7 @@ import Link from '../../components/com-link';
 import Icon from '../../components/com-icon';
 import Image from '../../components/com-image';
 import Textarea from '../../components/com-textarea';
-import Menu from '../../components/mod-menu';
+import Menu from './menu';
 
 
 const SolicitudBaja = (props) => {
