@@ -3,6 +3,7 @@ import Title from '../../components/com-title';
 import Menu from './menu';
 import Toast from '../../modules/mod-toast';
 import Article from '../../modules/mod-article';
+import Breadcrumb from '../../modules/mod-breadcrumb';
 
 
 const SolicitudBaja = (props) => {
@@ -14,11 +15,7 @@ const SolicitudBaja = (props) => {
                     <Menu />
                 </aside>
                 <section>
-                    <nav className="breadcrumb">
-                        <ol className="com-list --inline">
-                            <li>Club LA NACION</li>
-                        </ol>
-                    </nav>
+                    <Breadcrumb />
 
                     <div className="mod-title">
                         <Title text="Vincular credencial" tag="h1" size="xl"></Title>

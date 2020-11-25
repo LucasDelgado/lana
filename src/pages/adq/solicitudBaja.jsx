@@ -6,6 +6,7 @@ import Button from '../../components/com-button';
 import Link from '../../components/com-link';
 import Textarea from '../../components/com-textarea';
 import Menu from './menu';
+import Breadcrumb from '../../modules/mod-breadcrumb';
 
 
 const SolicitudBaja = (props) => {
@@ -17,12 +18,7 @@ const SolicitudBaja = (props) => {
                     <Menu />
                 </aside>
                 <section>
-                    <nav className="breadcrumb">
-                        <ol className="com-list --inline">
-                            <li>Mis suscripciones</li>
-                            <li><Link link="#">Ver suscripciones</Link></li>
-                        </ol>
-                    </nav>
+                    <Breadcrumb />
 
                     <div className="mod-title">
                         <Title text="Solicitud de baja" tag="h1" size="xl"></Title>
