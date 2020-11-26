@@ -17,11 +17,7 @@ const ModToast  = props => {
             <Icon name="alert" />
             <div className="mod-description">
                 <Title tag="h3" size="s" text={title}></Title>
-                {
-                text
-                    ? <span className="">{text}</span>
-                    : ( <></> )
-                }             
+                { text && <span className="">{text}</span> }             
             </div>
         </div>
     )

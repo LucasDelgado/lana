@@ -3,6 +3,10 @@
 
 
 //TAMÑOS DE FUENTES
+// .--twoxs {
+//     font-size: px(16);
+//     line-height: px(24);
+// }
 
 [class~="6xs"] {
     @include textsize(11,16);

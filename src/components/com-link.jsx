@@ -1,4 +1,5 @@
 import React from 'react';
+//HACERLO MIERDA
 
 const ComLink = props => {
     const { children, link, text, target, title, mod, size, style } = props;

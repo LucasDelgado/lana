@@ -14,17 +14,9 @@ const ModArticle  = props => {
             <div className="mod-description">
                 <Title text={title} tag="h3" size="s"></Title>
                 <p>Dejanos tus datos y empezá a disfrutar de los beneficios. <Link link="#">Completá el formulario</Link> o <Link link="#">llamanos al 5199-4740</Link></p>
-                {
-                buttonText
-                ? <Button href={href}>{buttonText}</Button>
-                    : ( <></> )
-                }
+                { buttonText && <Button href={href}>{buttonText}</Button> }
             </div>
-            {
-            imageUrl
-            ? <div className="mod-media"><Image src={imageUrl} alt={title} /></div>
-                : ( <></> )
-            }
+            { imageUrl && <div className="mod-media"><Image src={imageUrl} alt={title} /></div> }
         </div>
     )
 }

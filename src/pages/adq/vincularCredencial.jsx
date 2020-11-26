@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '../../components/com-title';
 import Menu from './menu';
 import Toast from '../../modules/mod-toast';
-import Article from '../../modules/mod-article';
+import Article from '../../modules/mod-promo';
 import Breadcrumb from '../../modules/mod-breadcrumb';
 
 
@@ -29,6 +29,7 @@ const SolicitudBaja = (props) => {
                     <Article title="¡Agregá Club LA NACION a tu suscripción!" buttonText="Vincular tarjeta" href="/vincular-credencial-2" imageUrl="https://via.placeholder.com/180x140" />
                     <Article title="¡Agregá Club LA NACION a tu suscripción!" imageUrl="https://via.placeholder.com/180x140" />
                     <Article title="¡Agregá Club LA NACION a tu suscripción!" buttonText="Vincular tarjeta" href="/vincular-credencial-2" />
+                    <Article title="¡Agregá Club LA NACION a tu suscripción!" />
 
                 </section>
             </div>
