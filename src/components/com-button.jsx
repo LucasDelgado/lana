@@ -2,12 +2,12 @@ import React from 'react';
 import ComIcon from '../components/com-icon';
 
 const getTagProps = (tag, props) => {
-    const { type, value, href, target, title } = props;
+    const { type, value, href, target, title, disabled } = props;
 
     const propsByTag = {
         a: { href, target, title },
         input: { type: type || 'button', value, title },
-        button: { type: type || 'button', title }
+        button: { type: type || 'button', title, disabled }
     };
 
     return propsByTag[tag];
@@ -15,8 +15,8 @@ const getTagProps = (tag, props) => {
 };
 
 const ComButton = props => {
-    const { children, href, value, mod, icon, size } = props;
-    const className = `com-button ${mod || ``} ${size || ``}`;
+    const { children, href, value, mod, icon, size, disabled } = props;
+    const className = `com-button ${mod || ``} ${size || ``} ${disabled ? '--disabled' : ''}`;
 
     const tag = (href && 'a') || (value && 'input') || 'button';
 

@@ -894,6 +894,10 @@ a:hover {
   line-height: 3.5rem;
 }
 
+strong {
+  font-weight: 700;
+}
+
 .row {
   display: -ms-flexbox;
   display: -webkit-box;
@@ -1995,47 +1999,92 @@ a:hover {
 
 .com-button:hover {
   background: #008DFF;
-  border: 1px solid #008DFF;
+  border-color: #008DFF;
 }
 
-.com-button.--xs {
-  padding: 0.5rem 1rem;
+.com-button.--active {
+  background: #006998;
+  border-color: #006998;
+}
+
+.com-button.--disabled {
+  background: #CCCCCC;
+  border-color: #CCCCCC;
+  cursor: default;
 }
 
 .com-button.--secondary {
   background: #FFFFFF;
-  border: 1px solid #0074C4;
+  border-color: #0074C4;
   color: #0074C4;
 }
 
 .com-button.--secondary:hover {
   background: #0074C4;
-  border: 1px solid #0074C4;
+  border-color: #0074C4;
   color: #FFFFFF;
+}
+
+.com-button.--secondary.--active {
+  background: #006998;
+  border-color: #006998;
+  color: #FFFFFF;
+}
+
+.com-button.--secondary.--disabled {
+  background: #FFFFFF;
+  border-color: #CCCCCC;
+  color: #CCCCCC;
 }
 
 .com-button.--tertiary {
   background: #F2F2F2;
-  border: 1px solid #F2F2F2;
+  border-color: #F2F2F2;
   color: #272727;
 }
 
 .com-button.--tertiary:hover {
   background: #E4E4E4;
-  border: 1px solid #E4E4E4;
-  color: #272727;
+  border-color: #E4E4E4;
+}
+
+.com-button.--tertiary.--active {
+  background: #CCCCCC;
+  border-color: #CCCCCC;
+}
+
+.com-button.--tertiary.--disabled {
+  background: #E4E4E4;
+  border-color: #E4E4E4;
+  color: #919191;
 }
 
 .com-button.--special {
   background: #FFFF24;
-  border: 1px solid #CCCCCC;
+  border-color: #CCCCCC;
   color: #272727;
 }
 
 .com-button.--special:hover {
   background: #000000;
-  border: 1px solid #000000;
+  border-color: #000000;
   color: #FFFFFF;
+}
+
+.com-button.--special.--active {
+  background: #000000;
+  border-color: #000000;
+  color: #FFFFFF;
+}
+
+.com-button.--special.--disabled {
+  background: #FFFFFF;
+  border-color: #CCCCCC;
+  color: #CCCCCC;
+}
+
+.com-button.--xs {
+  padding: 0.5rem 1rem;
 }
 
 .com-input {
@@ -2048,6 +2097,27 @@ a:hover {
   background: #FFFFFF;
   border: 1px solid #E4E4E4;
   resize: none;
+}
+
+.com-input.--disabled {
+  background: #F2F2F2;
+  color: #919191;
+}
+
+.com-input.--disabled::-webkit-input-placeholder {
+  color: #919191;
+}
+
+.com-input.--disabled:-ms-input-placeholder {
+  color: #919191;
+}
+
+.com-input.--disabled::-ms-input-placeholder {
+  color: #919191;
+}
+
+.com-input.--disabled::placeholder {
+  color: #919191;
 }
 
 .com-input:focus {

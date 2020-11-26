@@ -6,7 +6,7 @@ import Link from '../components/com-link';
 
 
 const ModArticle  = props => {
-    const { mod, title, buttonText, imageUrl } = props;
+    const { mod, title, buttonText, href, imageUrl } = props;
     if (!title) return null;
 
     return (        
@@ -16,7 +16,7 @@ const ModArticle  = props => {
                 <p>Dejanos tus datos y empezá a disfrutar de los beneficios. <Link link="#">Completá el formulario</Link> o <Link link="#">llamanos al 5199-4740</Link></p>
                 {
                 buttonText
-                ? <Button>{buttonText}</Button>
+                ? <Button href={href}>{buttonText}</Button>
                     : ( <></> )
                 }
             </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ComInput  = props => {
-    const { type, name, value, placeholder, onChange, id, active, altClass } = props;
+    const { type, name, value, placeholder, onChange, id, disabled, active, mod } = props;
     
     return (
         <input 
@@ -11,7 +11,9 @@ const ComInput  = props => {
             value={value}
             placeholder={placeholder}
             onChange={onChange}
-            className={`com-input ${altClass || ''} ${active ? '--active' : ''}`}
+            disabled={disabled}
+
+            className={`com-input ${mod || ''} ${active ? '--active' : ''} ${disabled ? '--disabled' : ''}`}
         />
 
     )

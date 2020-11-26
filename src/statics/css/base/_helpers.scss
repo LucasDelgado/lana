@@ -51,3 +51,8 @@
 [class~="3xl"] {
     @include textsize(48,56);
 }
+
+
+strong {
+    font-weight: 700;
+}

@@ -26,9 +26,9 @@ const SolicitudBaja = (props) => {
                     <Toast status="info" title="Información importante" text="Bajada del error, lorem ipsum." />
                     <Toast status="alert" title="Información importante" text="Bajada del error, lorem ipsum." />
                     
-                    <Article title="¡Agregá Club LA NACION a tu suscripción!" buttonText="Vincular tarjeta" imageUrl="https://via.placeholder.com/180x140" />
+                    <Article title="¡Agregá Club LA NACION a tu suscripción!" buttonText="Vincular tarjeta" href="/vincular-credencial-2" imageUrl="https://via.placeholder.com/180x140" />
                     <Article title="¡Agregá Club LA NACION a tu suscripción!" imageUrl="https://via.placeholder.com/180x140" />
-                    <Article title="¡Agregá Club LA NACION a tu suscripción!" buttonText="Vincular tarjeta" />
+                    <Article title="¡Agregá Club LA NACION a tu suscripción!" buttonText="Vincular tarjeta" href="/vincular-credencial-2" />
 
                 </section>
             </div>
