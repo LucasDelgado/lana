@@ -8,20 +8,24 @@ const ComLabel  = props => {
     return (        
         <label className={`com-label ${size || '4xs'} ${mod || ''} ${type ? '--for' : ''} ${active ? '--active' : ''}`} htmlFor={id}>
             {
-            type
-                ? <ComInput
+            type &&
+                 <ComInput
                     type={type} 
                     name={name}
                     id={id}
                     value={value} 
                     active={active}
                 />
-                : ( <></> )
             }
+            
             {
-            text || children
-                ? ( <>{text || ``} {children || ``}</> )
-                : ( <></> )
+            text &&
+                ( <>{text}</> )
+            }
+            
+            {
+            children && 
+                ( <>{children}</> )
             }
         </label>
     )
