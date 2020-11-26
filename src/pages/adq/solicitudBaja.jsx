@@ -1,12 +1,12 @@
 import React from 'react';
-import Title from '../../components/com-title';
-import Label from '../../components/com-label';
-import Input from '../../components/com-input';
-import Button from '../../components/com-button';
-import Link from '../../components/com-link';
-import Textarea from '../../components/com-textarea';
+import Title from '../../components/title';
+import Label from '../../components/label';
+import Input from '../../components/input';
+import Button from '../../components/button';
+import Link from '../../components/link';
+import Textarea from '../../components/textarea';
 import Menu from './menu';
-import Breadcrumb from '../../modules/mod-breadcrumb';
+import Breadcrumb from '../../modules/breadcrumb';
 
 
 const SolicitudBaja = (props) => {

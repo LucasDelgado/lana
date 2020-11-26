@@ -1,5 +1,5 @@
 import React from 'react'
-import ComInput from './com-input';
+import ComInput from './input';
 
 const ComLabel  = props => {
     const { type, active, text, value, id, name, size, mod, children } = props;

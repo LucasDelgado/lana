@@ -1,12 +1,12 @@
 import React from 'react';
 import Menu from './menu';
-import Breadcrumb from '../../modules/mod-breadcrumb';
-import Title from '../../components/com-title';
+import Breadcrumb from '../../modules/breadcrumb';
+import Title from '../../components/title';
 
-import Toast from '../../modules/mod-toast';
-import Label from '../../components/com-label';
-import Input from '../../components/com-input';
-import Button from '../../components/com-button';
+import Toast from '../../modules/toast';
+import Label from '../../components/label';
+import Input from '../../components/input';
+import Button from '../../components/button';
 
 
 

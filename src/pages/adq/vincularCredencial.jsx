@@ -1,9 +1,9 @@
 import React from 'react';
-import Title from '../../components/com-title';
+import Title from '../../components/title';
 import Menu from './menu';
-import Toast from '../../modules/mod-toast';
-import Article from '../../modules/mod-promo';
-import Breadcrumb from '../../modules/mod-breadcrumb';
+import Toast from '../../modules/toast';
+import Article from '../../modules/promo';
+import Breadcrumb from '../../modules/breadcrumb';
 
 
 const SolicitudBaja = (props) => {

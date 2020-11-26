@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from './com-link';
+import Link from './link';
 
 //import '../../com-icon.css';
 

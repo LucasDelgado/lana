@@ -1,8 +1,8 @@
 import React from 'react'
-import Button from '../components/com-button';
-import Image from '../components/com-image';
-import Title from '../components/com-title';
-import Link from '../components/com-link';
+import Button from '../components/button';
+import Image from '../components/image';
+import Title from '../components/title';
+import Link from '../components/link';
 
 
 const ModArticle  = props => {

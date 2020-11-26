@@ -1,7 +1,7 @@
 import React from 'react'
-import Link from '../../components/com-link';
-import Logo from '../../components/com-logo';
-import Image from '../../components/com-image';
+import Link from '../../components/link';
+import Logo from '../../components/logo';
+import Image from '../../components/image';
 
 
 const Header  = props => {

@@ -1,6 +1,6 @@
 import React from 'react'
-import Link from '../../components/com-link';
-import Title from '../../components/com-title';
+import Link from '../../components/link';
+import Title from '../../components/title';
 
 
 const Footer  = props => {

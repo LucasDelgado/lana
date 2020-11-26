@@ -1,5 +1,5 @@
 import React from 'react';
-import ComIcon from '../components/com-icon';
+import ComIcon from './icon';
 
 const getTagProps = (tag, props) => {
     const { type, value, href, target, title, disabled } = props;

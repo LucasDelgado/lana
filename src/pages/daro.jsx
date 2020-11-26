@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Button from '../components/com-button';
-import Title from '../components/com-title';
+import Button from '../components/button';
+import Title from '../components/title';
 
 const Daro = (props) => {
     return ( 

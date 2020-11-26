@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from './com-link';
+import Link from './link';
 
 const ComTitle = (props) => {
     const { tag, link, mod, text, size } = props;
