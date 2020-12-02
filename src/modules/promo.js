@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../components/button';
 import Image from '../components/image';
-import Titles from '../components/titles';
+import Title from '../components/titles';
 
 
 const Promo  = ( {title, imageUrl, descrip} ) => {
@@ -9,7 +9,7 @@ const Promo  = ( {title, imageUrl, descrip} ) => {
     return (        
         <div className="mod-promo">
             <div className="mod-promo__descrip">
-                <Titles as="h3" size="s">{title}</Titles>
+                <Title as="h3" size="s">{title}</Title>
                 {descrip}                
             </div>
             <div className="mod-promo__img">

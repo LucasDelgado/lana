@@ -1,6 +1,20 @@
 import React from 'react';
-import Link from './link';
 
+const Title = ({as, size, children}) => {
+    
+    const Element = as || 'h4';
+    const className = `com-title ${size || ``}`;
+
+    return ( 
+        <Element className ={className}>{children}</Element>
+    );
+}
+ 
+export default Title;
+
+
+
+/*
 const ComTitle = (props) => {
     const { tag, link, mod, text, size } = props;
     if (!text) return null;
@@ -15,3 +29,4 @@ const ComTitle = (props) => {
 }
  
 export default ComTitle;
+*/
