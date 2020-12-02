@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '../components/button';
 import Image from '../components/image';
-import Title from '../components/titles';
+import Title from '../components/title';
 
 
 const Promo  = ( {title, imageUrl, descrip} ) => {
