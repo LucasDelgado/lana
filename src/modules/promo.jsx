@@ -10,7 +10,7 @@ const ModArticle  = props => {
     if (!title) return null;
 
     return (        
-        <div className={`mod-article --${mod || ``}`}>
+        <div className={`mod-promo --${mod || ``}`}>
             <div className="mod-description">
                 <Title text={title} tag="h3" size="s"></Title>
                 <p>Dejanos tus datos y empezá a disfrutar de los beneficios. <Link link="#">Completá el formulario</Link> o <Link link="#">llamanos al 5199-4740</Link></p>
