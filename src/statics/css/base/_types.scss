@@ -2,9 +2,9 @@
 @import '../abstracts/mixins';
 
 @include font-face('SuecaMedium', suecaslab-medium, normal);
-@include font-face('SuecaBold', suecaslab-bold, normal);
-@include font-face('Icons', lana-icons, normal);
-@include font-face('Logos', logos, normal);
+//@include font-face('SuecaBold', suecaslab-bold, normal);
+//@include font-face('Icons', lana-icons, normal);
+//@include font-face('Logos', logos, normal);
 
 
 [class^="icon-"], [class*=" icon-"] {

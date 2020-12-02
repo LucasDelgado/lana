@@ -1,10 +1,29 @@
 import React from 'react'
 import Button from '../components/button';
 import Image from '../components/image';
-import Title from '../components/title';
-import Link from '../components/link';
+import Titles from '../components/titles';
 
 
+const Promo  = ( {title, imageUrl, descrip} ) => {
+
+    return (        
+        <div className="mod-promo">
+            <div className="mod-promo__descrip">
+                <Titles as="h3" size="s">{title}</Titles>
+                {descrip}                
+            </div>
+            <div className="mod-promo__img">
+                <Image src={imageUrl} alt={title} />
+            </div>
+        </div>
+    )
+}
+
+export default Promo;
+
+
+
+/*
 const ModArticle  = props => {
     const { mod, title, buttonText, href, imageUrl } = props;
     if (!title) return null;
@@ -22,3 +41,4 @@ const ModArticle  = props => {
 }
 
 export default ModArticle;
+*/

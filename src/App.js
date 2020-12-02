@@ -6,6 +6,7 @@ import SolicitudBaja from './pages/adq/solicitudBaja'
 import VincularCredencial from './pages/adq/vincularCredencial'
 import VincularCredencial2 from './pages/adq/vincularCredencial2'
 import Daro from './pages/daro'
+import MiCuenta from './pages/miCuenta'
 import Header from './pages/adq/header'
 import Footer from './pages/adq/footer'
 
@@ -31,6 +32,9 @@ const App = () => {
             </Route>
             <Route path="/daro">
               <Daro />
+            </Route>
+            <Route path="/mi-cuenta">
+              <MiCuenta/>
             </Route>
           </Switch>
         </main>
