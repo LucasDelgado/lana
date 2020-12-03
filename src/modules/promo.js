@@ -1,20 +1,29 @@
 import React from 'react'
-import Button from '../components/button';
 import Image from '../components/image';
 import Title from '../components/title';
 
 
 const Promo  = ( {title, imageUrl, descrip} ) => {
 
+    const _renderDescrip = (element) =>{
+        return  <div dangerouslySetInnerHTML={{ __html: element}} />
+    }
+
     return (        
         <div className="mod-promo">
             <div className="mod-promo__descrip">
+                {
+                title &&
                 <Title as="h3" size="s">{title}</Title>
-                {descrip}                
+                }
+                {_renderDescrip(descrip)}                
             </div>
+            {
+            imageUrl &&
             <div className="mod-promo__img">
                 <Image src={imageUrl} alt={title} />
             </div>
+            }
         </div>
     )
 }

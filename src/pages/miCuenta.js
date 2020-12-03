@@ -6,6 +6,8 @@ import Link from '../components/link';
 import imgPromo from '../imagePromo.png';
 
 
+const hola= {pepe:"<p>Dejanos tus datos y empezá a disfrutar de los beneficios. Completá el formulario o llamanos al 5199-4740</p> <a> pepepeeee </a> "}
+
 const MiCuenta = (props) => {
     return ( 
         <>
@@ -13,7 +15,7 @@ const MiCuenta = (props) => {
                 <Promo 
                     title="Soy pepe"
                     imageUrl={imgPromo}
-                    descrip= { <p>Dejanos tus datos y empezá a disfrutar de los beneficios. <Link link="#">Completá el formulario</Link> o <Link link="#">llamanos al 5199-4740</Link></p> }/>
+                    descrip= { hola.pepe }/>
             </div>
         </>
      );
