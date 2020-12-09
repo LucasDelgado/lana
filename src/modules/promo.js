@@ -14,7 +14,7 @@ const Promo  = ( {title, imageUrl, descrip} ) => {
             <div className="mod-promo__descrip">
                 {
                 title &&
-                <Title as="h3" size="s">{title}</Title>
+                <Title size="s">{title}</Title>
                 }
                 {_renderDescrip(descrip)}                
             </div>
