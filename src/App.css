@@ -35,3 +35,30 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-framework{
+  position: fixed;
+  top: 0;
+  left: -10%;
+  background-color: #5d5d5d;
+  padding: 10px;
+  width: 190px;
+  z-index: 9999;
+  color: #fff;
+  transition: left .7s;
+}
+.nav-framework--visible{
+  position: fixed;
+  left: 0;
+  transition: left .7s;
+}
+.nav-framework__submenu{
+  padding-left: 10px;
+}
+.nav-framework span{
+  position: absolute;
+  right: -18px;
+  background: #5d5d5d;
+  padding: 1px 5px;
+  cursor: pointer;
+}

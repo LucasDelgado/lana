@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Promo from '../modules/promo';
+import Promo from '../modules/adq/promo';
 
 import imgPromo from '../imagePromo.png';
 

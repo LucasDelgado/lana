@@ -1,13 +1,9 @@
 import React from 'react'
-import Image from '../components/image';
-import Title from '../components/title';
+import Image from '../../components/image';
+import Title from '../../components/title';
 
 
 const Promo  = ( {title, imageUrl, descrip} ) => {
-
-    const _renderDescrip = (element) =>{
-        return  <div dangerouslySetInnerHTML={{ __html: element}} />
-    }
 
     return (        
         <div className="mod-promo">
@@ -16,7 +12,7 @@ const Promo  = ( {title, imageUrl, descrip} ) => {
                 title &&
                 <Title size="s">{title}</Title>
                 }
-                {_renderDescrip(descrip)}                
+                {descrip}                
             </div>
             {
             imageUrl &&
