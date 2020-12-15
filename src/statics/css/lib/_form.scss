@@ -25,6 +25,14 @@
     //================================
     &__row{
         margin-bottom:$spacing-md;
+        &.state--center{
+            display: flex;
+            justify-content: center;
+        }
+        &.state--right{
+            display: flex;
+            justify-content: right;
+        }
     }
     //================================
     //LABEL
@@ -117,4 +125,48 @@
             }
         } 
     }
+    //================================
+    //SELECT
+    //================================
+    &__select{
+        position: relative;
+        display: flex;
+        width: 100%;
+        padding: px(12) px(10) px(10)  px(10);
+        border-radius: px(4);        
+        background: $neutral-white;
+        border: 1px solid $light-neutral-300;  
+        resize:none;
+        transition: all .3s ease-in-out;
+
+        //DISABLED (nativo html5)
+        &:disabled{
+            background: $light-neutral-200;
+            color: $light-neutral-500;
+            &::placeholder {
+                color: $light-neutral-500; 
+            }
+        }
+
+        //HOVER (nativo html5)
+        &:not(:disabled):hover{
+            transition: all .3s ease-in-out;
+            border-color:$dark-neutral-100;            
+        }
+        
+        //FOCUS (nativo html5)
+        &:not(:disabled):focus {
+            transition: all .3s ease-in-out;
+            border-color:$light-blue-400;
+            outline: none;
+            &::placeholder {
+                color: $light-neutral-800;
+            }
+        }
+    }
 }
+
+//================================
+//RESPONSIVE
+//================================
+

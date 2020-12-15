@@ -13,6 +13,7 @@ import FormRow from '../../lib/lanaForm/formRow';
 import InputGroup from '../../lib/lanaForm/inputGroup';
 import Label from '../../lib/lanaForm/label';
 import Input from '../../lib/lanaForm/input';
+import Select from '../../lib/lanaForm/select';
 
 import Button from '../../components/button';
 
@@ -30,7 +31,7 @@ const SolicitudBaja = (props) => {
                     <Breadcrumb />
 
                     <div className="mod-title">
-                        <Title text="Vincular credencial" tag="h1" size="xl"></Title>
+                        <Title tag="h1" size="xl">Vincular credencial</Title>
                     </div>
                     
                     <Toast status="warning" title="Información importante" text="Bajada del error, lorem ipsum." />
@@ -43,10 +44,10 @@ const SolicitudBaja = (props) => {
                                     <div>
                                         <Label
                                             text="Tipo de documento"/>
-                                        <Input
-                                            type="text"
-                                            placeholder="33-"
-                                            description="Descripcion"/>
+                                        <Select>
+                                            <option value="dni">DNI</option>
+                                            <option value="pasaporte">Pasaporte</option>
+                                        </Select>
                                     </div>
                                     <div>
                                         <Label
@@ -58,30 +59,31 @@ const SolicitudBaja = (props) => {
                                     </div>
                                 </InputGroup>  
                             </FormRow>   
-                            <FormRow>
-                                <FormRow>
-                                    <Label
-                                        text="Número de tarjeta Club LA NACION"
-                                        labelIcon="icon-info"/>
-                                    <InputGroup widthInputs={"80px 145px 50px"}>
-                                        <Input
-                                            type="text"
-                                            placeholder="33"
-                                            description="Descripcion"
-                                            disabled/>
-                                        <Input
-                                            type="text"
-                                            placeholder="_ _ _ _ _ _ _ _ _ _"
-                                            description="Descripcion"/>
-                                        <Input
-                                            type="text"
-                                            placeholder="_ _"/>  
-                                    </InputGroup>
-                                </FormRow>
+                            <FormRow>                              
+                                <Label
+                                    text="Número de tarjeta Club LA NACION"
+                                    labelIcon="icon-info"/>
+                                <InputGroup widthInputs={"70px 138px 47px"}>
+                                    <Input
+                                        type="text"
+                                        placeholder="33"
+                                        description="Descripcion"
+                                        disabled/>
+                                    <Input
+                                        type="text"
+                                        placeholder="_ _ _ _ _ _ _ _ _ _"
+                                        description="Descripcion"/>
+                                    <Input
+                                        type="text"
+                                        placeholder="_ _"/>  
+                                </InputGroup>                               
                             </FormRow>
                         </fieldset>
+                        <FormRow align="center">
+                            <Button text="Vincular tarjeta" disabled>Vincular tarjeta</Button>
+                        </FormRow>
                     </form>
-                        <Button text="Vincular tarjeta" disabled>Vincular tarjeta</Button>
+                       
                     
                     
 
