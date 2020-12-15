@@ -60,6 +60,7 @@ const Button = ({
       ) : (
         label
       )} */}
+      {/* Se debe eliminar inline-style */}
       {icon && isFirstPositioned && <Icon name={icon} size={iconSize} style={ label && iconMargin} />}
       {label}
       {icon && !isFirstPositioned && <Icon name={icon} size={iconSize} style={ label && iconMargin} />}
