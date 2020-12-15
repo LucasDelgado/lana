@@ -6,8 +6,8 @@
 @import './statics/css/base/helpers';
 @import './statics/css/abstracts/imports';
 @import './statics/css/layouts/grid';
-@import './statics/css/layouts/layout';
 
+@import './statics/css/lib/form';
 
 @import './statics/css/components/com-button';
 @import './statics/css/components/com-input';
@@ -21,8 +21,6 @@
 
 @import './statics/css/modules/mod-promo';
 @import './statics/css/modules/mod-toast';
-
-
 
 
 @import './statics/css/pages/adq';

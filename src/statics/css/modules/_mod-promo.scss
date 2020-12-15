@@ -1,16 +1,13 @@
+@import '../abstracts/variables';
 .mod-promo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: px(40);
-    .mod-description {
-        padding-right: px(40);
+    margin-bottom: $spacing-xl;
+    .mod-promo__descrip {
+        padding-right:$spacing-xl;
         .com-title {
-            margin-bottom: px(16);
-        }
-        p {
-            margin-bottom: px(16);
+            margin-bottom: $spacing-sm;
         }
     }
-    
 }

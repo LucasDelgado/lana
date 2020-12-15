@@ -5,7 +5,6 @@ import Input from '../../components/input';
 import Button from '../../components/button';
 import Link from '../../components/link';
 import Textarea from '../../components/textarea';
-import Menu from './menu';
 import Breadcrumb from '../../modules/breadcrumb';
 
 
@@ -14,9 +13,6 @@ const SolicitudBaja = (props) => {
         
         <>
             <div className="lay-sidebar">
-                <aside>
-                    <Menu />
-                </aside>
                 <section>
                     <Breadcrumb />
 

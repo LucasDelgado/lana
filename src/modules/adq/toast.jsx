@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from '../components/button';
-import Icon from '../components/icon';
-import Title from '../components/title';
+import Button from '../../components/button';
+import Icon from '../../components/icon';
+import Title from '../../components/title';
 
 
 const ModToast  = props => {

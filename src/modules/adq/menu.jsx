@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from '../../components/link';
 
-const ModMenu  = props => {
+const Menu  = props => {
     //const { type, active, text, value, id, name, size, mod, children } = props;
  
     return (        
@@ -35,7 +35,7 @@ const ModMenu  = props => {
     )
 }
 
-export default ModMenu;
+export default Menu;
 
 
 

@@ -1,13 +1,13 @@
 import React from 'react';
+import Promo from '../modules/adq/promo';
+import Link from '../components/link';
+import imgPromo from '../imagePromo.png';
 
 const Home = (props) => {
     return ( 
-        <div>
-            <h1>Indice</h1>
-            <h3>Adquisición</h3>
-            <h3>Club</h3>
-            <h3>LN</h3>
-            <h3>Storybook</h3>
+        <div class="lay">
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>                       
+            <p>Whatssss appp niggaaa</p>
         </div>
      );
 }
