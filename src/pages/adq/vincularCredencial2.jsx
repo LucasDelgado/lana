@@ -1,11 +1,20 @@
 import React from 'react';
-import Menu from './menu';
+
+import MiCuentaLayout from '../../businessLayout/miCuentaLayout';
+
+import Menu from '../../modules/adq/menu';
+
 import Breadcrumb from '../../modules/breadcrumb';
 import Title from '../../components/title';
 
-import Toast from '../../modules/toast';
-import Label from '../../components/label';
-import Input from '../../components/input';
+import Toast from '../../modules/adq/toast';
+
+import FormRow from '../../lib/lanaForm/formRow';
+import InputGroup from '../../lib/lanaForm/inputGroup';
+import Label from '../../lib/lanaForm/label';
+import Input from '../../lib/lanaForm/input';
+import Select from '../../lib/lanaForm/select';
+
 import Button from '../../components/button';
 
 
@@ -13,7 +22,7 @@ import Button from '../../components/button';
 const SolicitudBaja = (props) => {
     return ( 
         
-        <>
+        <MiCuentaLayout>
             <div className="lay-sidebar">
                 <aside>
                     <Menu />
@@ -22,41 +31,61 @@ const SolicitudBaja = (props) => {
                     <Breadcrumb />
 
                     <div className="mod-title">
-                        <Title text="Vincular credencial" tag="h1" size="xl"></Title>
+                        <Title tag="h1" size="xl">Vincular credencial</Title>
                     </div>
                     
                     <Toast status="warning" title="Información importante" text="Bajada del error, lorem ipsum." />
                     
-                    <form>                      
-                        
+                    <form className="lanaForm"> 
                         <fieldset>
                             <legend>Ingresá los siguientes datos</legend>
-
-                            <section className="row-gap-2">
-                            <div className="mod-input">
-                                <Label mod="--title">Tipo de documento</Label>
-                                <Input type="text" placeholder="DNI"/>
-                            </div>
-
-                            <div className="mod-input">
-                                <Label mod="--title">Número de documento</Label>
-                                <Input type="text" placeholder="Ingresá el número de docuemento"/>
-                            </div>
-                            </section>
-                            <div className="mod-input">
-                                <Label mod="--title">Número de tarjeta Club LA NACION</Label>
-                                <section className="row-gap-3">
-                                <Input type="text" placeholder="638130" disabled/>
-                                <Input type="text" placeholder="_ _ _ _ _ _ _ _ _ _"/>
-                                <Input type="text" placeholder="_ _"/>
-                                </section>
-                            </div>
-                            
+                            <FormRow>
+                                <InputGroup widthInputs={"135px 1fr"}>
+                                    <div>
+                                        <Label
+                                            text="Tipo de documento"/>
+                                        <Select>
+                                            <option value="dni">DNI</option>
+                                            <option value="pasaporte">Pasaporte</option>
+                                        </Select>
+                                    </div>
+                                    <div>
+                                        <Label
+                                            text="Número de documento"/>
+                                        <Input
+                                            type="text"
+                                            placeholder="33-"
+                                            description="Descripcion"/>
+                                    </div>
+                                </InputGroup>  
+                            </FormRow>   
+                            <FormRow>                              
+                                <Label
+                                    text="Número de tarjeta Club LA NACION"
+                                    labelIcon="icon-info"/>
+                                <InputGroup widthInputs={"70px 138px 47px"}>
+                                    <Input
+                                        type="text"
+                                        placeholder="33"
+                                        description="Descripcion"
+                                        disabled/>
+                                    <Input
+                                        type="text"
+                                        placeholder="_ _ _ _ _ _ _ _ _ _"
+                                        description="Descripcion"/>
+                                    <Input
+                                        type="text"
+                                        placeholder="_ _"/>  
+                                </InputGroup>                               
+                            </FormRow>
                         </fieldset>
-
-                        <Button text="Vincular tarjeta" disabled>Vincular tarjeta</Button>
-                    
+                        <FormRow align="center">
+                            <Button text="Vincular tarjeta" disabled>Vincular tarjeta</Button>
+                        </FormRow>
                     </form>
+                       
+                    
+                    
 
                     <p><strong>¿No recordás el número de la tarjeta Club LA NACION?</strong> Llamanos al <strong>5199-4700</strong> de Lunes a Viernes de 8a 20hs y Sábados y Domingos de 8 a 14hs.</p>
 
@@ -65,7 +94,7 @@ S.A. La Nación utilizará la información para los siguientes fines: a) identif
 
                 </section>
             </div>
-        </>
+        </MiCuentaLayout>
        
      );
 }

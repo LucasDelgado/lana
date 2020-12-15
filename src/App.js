@@ -1,21 +1,18 @@
 import React from 'react';
-import {Switch,Route,Link} from "react-router-dom";
+import {Switch,Route} from "react-router-dom";
 
+import Menu from './components/frameWork/menu'
 import Home from './pages/home';
 import SolicitudBaja from './pages/adq/solicitudBaja'
 import VincularCredencial from './pages/adq/vincularCredencial'
 import VincularCredencial2 from './pages/adq/vincularCredencial2'
-import Daro from './pages/daro'
-import Header from './pages/adq/header'
-import Footer from './pages/adq/footer'
 
 import './App.css';
 
 const App = () => {
   return (
-    <div className="App">
-        <Header/>
-        <main>
+    <div className="App">       
+          <Menu/>
           <Switch>
             <Route exact path="/">
               <Home />
@@ -29,12 +26,7 @@ const App = () => {
             <Route path="/vincular-credencial-2">
               <VincularCredencial2 />
             </Route>
-            <Route path="/daro">
-              <Daro />
-            </Route>
           </Switch>
-        </main>
-        <Footer/>
     </div>
   );
 }
