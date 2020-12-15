@@ -1,0 +1,14 @@
+@import "../global/variables";
+
+.com-link {
+    cursor: pointer;
+    color: $light-blue-500;
+    
+    &:hover {
+        opacity: .8;
+    }
+
+    .Card &:nth-child(2n) {
+        margin-left: px(24);
+    }
+}
