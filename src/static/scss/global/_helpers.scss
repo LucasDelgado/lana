@@ -1,0 +1,54 @@
+@import "variables";
+@import "mixins";
+
+[class~="6xs"] {
+  @include textsize(11, 16);
+}
+
+[class~="5xs"] {
+  @include textsize(12, 16);
+}
+
+[class~="4xs"] {
+  @include textsize(14, 16);
+}
+
+[class~="3xs"] {
+  @include textsize(15, 17);
+}
+
+[class~="2xs"] {
+  @include textsize(16, 24);
+}
+
+[class~="xs"] {
+  @include textsize(18, 26);
+}
+
+[class~="s"] {
+  @include textsize(19, 30);
+}
+
+[class~="m"] {
+  @include textsize(16, 28);
+}
+
+[class~="l"] {
+  @include textsize(24, 32);
+}
+
+[class~="xl"] {
+  @include textsize(32, 40);
+}
+
+[class~="2xl"] {
+  @include textsize(40, 52);
+}
+
+[class~="3xl"] {
+  @include textsize(48, 56);
+}
+
+strong {
+  font-weight: 700;
+}
