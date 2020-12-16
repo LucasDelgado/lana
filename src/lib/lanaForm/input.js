@@ -1,8 +1,6 @@
-import React, { useState} from 'react';
+import React from 'react';
 
 const Input = ({className, leftIcon, type, name, id, placeholder, value, onChange, disabled, description}) => {
-
-    const [ stateInput, setstateInput ] = useState("");
 
     const _className = ()=>{
         let resultado=[];
@@ -13,9 +11,6 @@ const Input = ({className, leftIcon, type, name, id, placeholder, value, onChang
         }
         if(leftIcon){
             resultado.push("leftIcon");
-        }
-        if(stateInput != ""){
-            resultado.push(stateInput);
         }
         return resultado.join(' ');
     }
@@ -39,7 +34,6 @@ const Input = ({className, leftIcon, type, name, id, placeholder, value, onChang
                     <span className="lanaForm__input__box__descrip">{description}</span>
                 }
             </div>
-
         </div>
     );
 }
