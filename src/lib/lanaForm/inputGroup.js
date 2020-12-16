@@ -10,7 +10,7 @@ const InputGroup = ({children, widthInputs, mobileAllWidth}) => {
     }
 
     return ( 
-        <div className="lanaForm__group" style={ _renderStyle(mobileAllWidth, widthInputs) }>
+        <div className="lanaForm__container" style={ _renderStyle(mobileAllWidth, widthInputs) }>
             {children}
         </div>
      );

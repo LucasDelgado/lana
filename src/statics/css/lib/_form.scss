@@ -15,7 +15,7 @@
     //================================
     //GROUP (muchos input misma fila)
     //================================
-    &__group{
+    &__container{
         display: grid;
         grid-auto-flow: column;
         column-gap:  px(16);
