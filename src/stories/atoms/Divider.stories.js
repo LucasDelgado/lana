@@ -22,7 +22,3 @@ export default {
 const Template = (args) => <Divider {...args} />;
 
 export const Tradicional = Template.bind({});
-Tradicional.args = {
-  color: "#CCCCCC",
-  width: "100",
-};

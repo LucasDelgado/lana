@@ -1,4 +1,8 @@
+@import "../global/variables";
+
 .Divider {
   border: none;
   height: 1px;
+  margin-top: px(16);
+  margin-bottom: px(32);
 }

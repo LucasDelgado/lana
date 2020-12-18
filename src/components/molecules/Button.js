@@ -5,27 +5,12 @@ import Icon from "../atoms/Icon";
 import PropTypes from "prop-types";
 import "../../static/scss/molecules/_button.scss";
 
-const Button = ({
-  tag,
-  href,
-  mod,
-  target,
-  label,
-  size,
-  disabled,
-  type,
-  icon,
-  onClick,
-  iconSize,
-  isFirstPositioned,
-}) => {
-  const className = `com-button${` ${mod}` || ""}${` ${size}` || ""}${
-    disabled ? " --disabled" : ""
-  }`;
+const Button = ({ tag, href, mod, target, label, size, disabled, type, icon, onClick, iconSize, isFirstPositioned }) => {
+  const className = `com-button${` ${mod}` || ""}${` ${size}` || ""}${ disabled ? " --disabled" : ""}`;
   const CustomTag = tag || "button";
   const iconMargin = isFirstPositioned
-    ? { marginRight: "8px" }
-    : { marginLeft: "8px" };
+                      ? { marginRight: "8px" }
+                      : { marginLeft: "8px" };
 
   return (
     <ConditionalWrapper
@@ -41,26 +26,14 @@ const Button = ({
       defaultWrapper={(children) => (
         <CustomTag
           className={className}
-          href={href}
+          { ...(tag === 'a') && { href: href }}
           target={target}
-          onClick={onClick}
+          { ...(tag === 'button') &&  {onClick: onClick} }
         >
           {children}
         </CustomTag>
       )}
     >
-      {/* {icon ? (
-        <ConditionalPosition
-          condition={isFirstPositioned}
-          staticElement={label}
-          dynamicElement={
-            <Icon name={icon} size={iconSize} style={iconMargin} />
-          }
-        />
-      ) : (
-        label
-      )} */}
-      {/* Se debe eliminar inline-style */}
       {icon && isFirstPositioned && <Icon name={icon} size={iconSize} style={ label && iconMargin} />}
       {label}
       {icon && !isFirstPositioned && <Icon name={icon} size={iconSize} style={ label && iconMargin} />}

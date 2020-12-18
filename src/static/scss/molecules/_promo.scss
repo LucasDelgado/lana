@@ -1,0 +1,20 @@
+@import '../global/variables';
+
+.mod-promo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: px(40) 0;
+
+    &__descrip {
+        // padding-right: px(40);
+
+        .com-button {
+            display: block;
+            margin-top: px(16);
+        }
+        .com-title, .text {
+            margin-bottom: px(16);
+        }
+    }
+}

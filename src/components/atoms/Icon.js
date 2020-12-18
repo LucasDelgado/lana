@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Icon = ({ additionalClass, name, link, title, mod, size, style }) => {
-  const className = `com-icon icon-${name}${mod ? ` ${mod}` : ""}${size ? ` ${size}` : ""}${additionalClass ? ` ${additionalClass}`: ""}`;
+const Icon = ({ additionalClass, name, mod, size, funcionIcono, style }) => {
+  const className = `com-icon${` icon-${name}` || ``}${` ${mod}` || ``}${` ${size}` || ``}${` ${additionalClass}` || ``}`;
 
   return <i className={className} style={style} />;
 };

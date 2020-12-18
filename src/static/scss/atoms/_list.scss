@@ -19,3 +19,22 @@
     }
   }
 }
+
+.list {
+  margin-top: px(16);
+
+  li {
+    position: relative;
+    padding-left: px(32);
+    margin-bottom: px(16);
+
+    &:before {
+      position: absolute;
+      content: "•";
+      color: #5A5A5A;
+      font-size: px(32);
+      left: px(8);
+      bottom: 0;
+    }
+  }
+}

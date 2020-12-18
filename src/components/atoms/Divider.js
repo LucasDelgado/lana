@@ -14,4 +14,9 @@ Divider.propTypes = {
   color: PropTypes.string,
 };
 
+Divider.defaultProps = {
+  color: '#CCCCCC',
+  width: '100',
+}
+
 export default Divider;

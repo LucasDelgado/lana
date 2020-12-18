@@ -1,9 +1,9 @@
 import React from 'react';
-import Card from '../../components/molecules/Card';
+import Card from '../../components/atoms/Card';
 
 
 export default {
-    title: "LANA/Moléculas/Tarjeta",
+    title: "LANA/Átomos/Tarjeta",
     component: Card,
     argTypes: {
         type: {
@@ -27,7 +27,6 @@ Classic.args = {
 export const Premium = Template.bind({});
 Premium.args = {
     type: "Premium",
-    cardNumber: "111111-22222222-33",
 }
 
 export const Black = Template.bind({});

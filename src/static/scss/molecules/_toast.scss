@@ -20,7 +20,7 @@
     padding: 8px 12px 8px 0;
     height: max-content;
   }
-  .com-button {
+  > .com-button {
     position: absolute;
     right: px(16);
     padding: px(4);
@@ -31,7 +31,7 @@
 
   &.--success {
     border-color: $green-700;
-    .com-title,
+    .mod-description > .com-title,
     > .com-icon {
       color: $green-700;
     }
@@ -39,7 +39,7 @@
 
   &.--warning {
     border-color: $red-500;
-    .com-title,
+    .mod-description > .com-title,
     > .com-icon {
       color: $red-500;
     }
@@ -47,7 +47,7 @@
 
   &.--info {
     border-color: $light-blue-400;
-    .com-title,
+    .mod-description > .com-title,
     > .com-icon {
       color: $light-blue-400;
     }
@@ -55,7 +55,7 @@
 
   &.--alert {
     border-color: $orange-500;
-    .com-title,
+    .mod-description > .com-title,
     > .com-icon {
       color: $orange-500;
     }
