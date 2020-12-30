@@ -15,6 +15,7 @@ const ComLabel  = props => {
                     id={id}
                     value={value} 
                     active={active}
+                    {...props}
                 />
             }
             

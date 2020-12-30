@@ -8,6 +8,7 @@ import VincularCredencial from './pages/adq/vincularCredencial'
 import VincularCredencial2 from './pages/adq/vincularCredencial2'
 
 import './App.css';
+import Formulario from './maxi/Formulario';
 
 const App = () => {
   return (
@@ -25,6 +26,9 @@ const App = () => {
             </Route>
             <Route path="/vincular-credencial-2">
               <VincularCredencial2 />
+            </Route>
+            <Route path="/form">
+              <Formulario />
             </Route>
           </Switch>
     </div>

@@ -9,10 +9,10 @@ const ComInput  = props => {
             name={name} 
             id={id}
             value={value}
-            placeholder={placeholder}
+            placeholder={placeholder}   
             onChange={onChange}
             disabled={disabled}
-
+            {...props}
             className={`com-input ${mod || ''} ${active ? '--active' : ''} ${disabled ? '--disabled' : ''}`}
         />
 
