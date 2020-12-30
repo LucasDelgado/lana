@@ -5,7 +5,7 @@ import "../../static/scss/atoms/_divider.scss";
 const Divider = ({ color, width }) => (
   <hr
     className="Divider"
-    style={{ backgroundColor: color, width: width + "%" }}
+    style={{ backgroundColor: color, width: width + "%", marginBottom:"60px" }}
   />
 );
 

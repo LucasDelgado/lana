@@ -5,7 +5,7 @@ const Label = ({labelIcon, text}) => {
         <label className="lanaForm__label">
             {text}     
             {labelIcon && 
-                <i class={labelIcon}></i> 
+                <i className={labelIcon}></i> 
             } 
         </label>
     );

@@ -4,8 +4,6 @@ import MiCuentaLayout from '../../businessLayout/miCuentaLayout';
 
 import Title from '../../components/title';
 import Menu from '../../modules/adq/menu';
-import Toast from '../../modules/adq/toast';
-import Article from '../../modules/adq/promo';
 import Breadcrumb from '../../modules/breadcrumb';
 
 import Promo from '../../modules/adq/promo';
@@ -13,6 +11,8 @@ import Promo from '../../modules/adq/promo';
 import imgPromo from '../../imagePromo.png';
 import imgPromo2 from '../../image1.png';
 import Link  from '../../components/link';
+import Button from '../../components-feli/molecules/Button'
+import Divider from '../../components-feli/atoms/Divider'
 
 
 const SolicitudBaja = (props) => {
@@ -29,12 +29,14 @@ const SolicitudBaja = (props) => {
                         <Title tag="h1" size="xl">Vincular credencial</Title>
                     </div>
                     
-                    <Toast status="success" title="Información importante" text="Bajada del error, lorem ipsum." />
-
                     <Promo 
                         title="¿Tenés Club LA NACION?"
-                        descrip= { <p> Vinculá tu tarjeta Club LA NACION con tu cuenta para gestionar desde acá tu suscripciones. </p> }/>
-                    
+                        descrip= { <>
+                                        <p> Vinculá tu tarjeta Club LA NACION con tu cuenta para gestionar desde acá tu suscripciones. </p> <br/>
+                                        <Button label="Vincular Tarjeta">Vincular Tarjeta</Button>
+                                    </>
+                        }/>
+                    <Divider width="100" color= "#CCCCCC"/>
                     <Promo 
                         title="¡Agregá Club LA NACIÓN a tu suscripción!"
                         imageUrl={imgPromo2} 
@@ -43,7 +45,7 @@ const SolicitudBaja = (props) => {
                     <Promo 
                         title="¡Suscribite ahora!"
                         imageUrl={imgPromo} 
-                        descrip= { <p>Conocé los planes digitales de LA NACION.<Link link="#"> Más información</Link>.</p> }/>
+                        descrip= { <p>Conocé los planes digitales de LA NACION. <br/> <Link link="#"> Más información</Link>.</p> }/>
 
                 </section>
             </div>

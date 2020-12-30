@@ -1,16 +1,9 @@
 import React from 'react';
 
-const InputGroup = ({children, widthInputs, mobileAllWidth}) => {
-    let _renderStyle = (mobileAllWidth, widthInputs)=>{
-        let result={"gridTemplateColumns": widthInputs};
-        if(mobileAllWidth && window.innerWidth < 768){
-            result = null;
-        }
-        return result;
-    }
+const InputGroup = ({children, className}) => {
 
     return ( 
-        <div className="lanaForm__container" style={ _renderStyle(mobileAllWidth, widthInputs) }>
+        <div className={`lanaForm__container ${className}`}>
             {children}
         </div>
      );

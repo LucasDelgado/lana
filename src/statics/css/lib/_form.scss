@@ -4,7 +4,6 @@
 .lanaForm{
     margin-bottom: $spacing-lg;
     fieldset{
-        margin-bottom:$spacing-xl;
         legend{
             font-family: Arial;
             font-style: normal;
@@ -17,14 +16,21 @@
     //================================
     &__container{
         display: grid;
-        grid-auto-flow: column;
-        column-gap:  px(16);
+        row-gap: $spacing-lg; 
+        column-gap: $spacing-xs;   
+        @media screen and (min-width:1023px){
+            grid-auto-flow: column;
+            column-gap: $spacing-sm;
+        }
+        &.state--no-wrap{
+            grid-auto-flow: column !important;
+        }
     }
     //================================
     //ROW
     //================================
     &__row{
-        margin-bottom:$spacing-md;
+        margin-bottom:$spacing-xl;
         &.state--center{
             display: flex;
             justify-content: center;
@@ -38,16 +44,21 @@
     //LABEL
     //================================
     &__label{
-        display: flex;
         font-family: Arial;
         font-style: normal;
         font-weight: bold;
         font-size:  px(14);
         line-height:  px(16);
         margin-bottom: $spacing-xs;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
         &>i{
             font-size: px(17);
             margin-left: px(8);
+            vertical-align: text-bottom;
         }
     }
     //================================
@@ -75,7 +86,6 @@
                         color: $light-neutral-500; 
                     }
                 }
-
                 //HOVER (nativo html5)
                 &:not(:disabled):hover{
                     transition: all .3s ease-in-out;
@@ -101,13 +111,28 @@
         //ICONO A LA IZQUIERDA
         &.leftIcon{
             .lanaForm__input__box {
-                &> i{
+                .lanaForm__input__leftIcon{
                     position: absolute;
                     top: px(8);
                     left: px(14);
+                    z-index: 9;
                 }
                 input{
                     padding-left: px(45);
+                }
+            }
+        }
+        //ICONO A LA DERECHA
+        &.rightIcon{
+            .lanaForm__input__box {
+                .lanaForm__input__rightIcon{
+                    position: absolute;
+                    top: px(8);
+                    right: px(14);
+                    z-index: 9;
+                }
+                input{
+                    padding-right: px(45);
                 }
             }
         }
@@ -164,9 +189,215 @@
             }
         }
     }
+
+    //================================
+    //RADIO
+    //================================
+    &__radio {
+        display: block;
+        cursor: pointer;
+        &.state--error{
+            input{
+                & + span{
+                    &:before {
+                        background: $red-500;
+                    }
+                }
+            }
+        }
+        input {
+            display: none;
+            & + span {
+                height: px(20);
+                padding-left: px(20);
+                display: block;
+                position: relative;
+                font-size: px(14);
+                &:not(:empty) {
+                    padding-left: $spacing-lg;
+                }
+                &:before,
+                &:after {
+                    content: '';
+                    width: px(20);
+                    height: px(20);
+                    display: block;
+                    border-radius: 50%;
+                    left: 0;
+                    top: px(2);
+                    position: absolute;
+                }
+                &:before {
+                    background: $light-neutral-800;
+                    transition: background .2s ease, transform .4s cubic-bezier(.175, .885, .32, 2);
+                }
+                &:after {
+                    background: #fff;
+                    transform: scale(.78);
+                    transition: transform .6s cubic-bezier(.175, .885, .32, 1.4);
+                }
+            }
+            &:checked + span {
+                &:before {
+                    transform: scale(1.04);
+                    background: $light-blue-400;
+                }
+                &:after {
+                    transform: scale(.4);
+                    transition: transform .3s ease;
+                }
+            }
+            &:disabled + span {
+                color:$light-neutral-500;
+                &:before {  
+                    background: $light-neutral-500;
+                }
+            }
+        }
+    }
+
+    //================================
+    //CHECKBOX
+    //================================
+    &__checkbox {
+        display: block;
+        cursor: pointer;
+        &.state--error{
+            input{
+                & + span{
+                    &:after {
+                        border: 2px solid $red-500;
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+        input {
+            display: none;
+            & + span {
+                height: px(20);
+                padding-left: px(20);
+                display: block;
+                position: relative;
+                font-size: px(14);
+                &:not(:empty) {
+                    padding-left: $spacing-lg;
+                }
+                &:before,
+                &:after {
+                    display: block;
+                    left: 0;
+                    top: px(2);
+                    position: absolute;
+                }
+                &:before {
+                    color: white;
+                    background: $light-neutral-800;
+                    width: 14px;
+                    height: 16px;
+                    left: 0px;
+                    padding-left: 4px;
+                    padding-bottom: 4px;
+                    border-radius: 4px;
+                    padding-right: 2px;
+                }
+                &:after {
+                    content: "";
+                    border: 1px solid  $light-neutral-800;
+                    width: 18px;
+                    height: 18px;
+                    
+                }
+            }
+            &:checked + span {
+                &:before {
+                    content: '✔';
+                    background: $light-blue-400;
+                    line-height: 21px;
+                }
+                &:after {
+                    transition: transform .3s ease;
+                }
+            }
+            &:disabled + span {
+                color:$light-neutral-500;
+                &:before {  
+                    background: $light-neutral-500;
+                }
+            }
+        }
+    }
+
+    //================================
+    //ItemBox
+    //================================
+    &__itemBox{
+        padding: $spacing-sm;
+        border-radius: 4px;
+        border: 1px solid $light-neutral-300;
+        &__main{
+            display: flex;
+            justify-content: space-between;
+            &__link{
+                color:$dark-neutral-500 ;
+            }
+        }
+        &__descrip{
+            margin-left: $spacing-lg;
+            font-size: px(12);
+            color:$dark-neutral-500 ;
+        }
+        
+        //DISABLED (nativo html5)
+        &.state--disabled{
+            background: $light-neutral-200;
+            color: $light-neutral-500;
+            &::placeholder {
+                color: $light-neutral-500; 
+            }
+        }
+        //HOVER (nativo html5)
+        &:not(.state--disabled):hover{
+            transition: all .3s ease-in-out;
+            border-color:$dark-neutral-100;            
+        }
+        
+        //FOCUS (nativo html5)
+        &:not(.state--disabled):focus {
+            transition: all .3s ease-in-out;
+            border-color:$light-blue-400;
+            &::placeholder {
+                color: $light-neutral-800;
+            }
+        }
+
+        &.state--error{
+            border-color:$red-500;
+        }
+    }
 }
 
 //================================
 //RESPONSIVE
 //================================
+.grid-25-75{
+    grid-template-columns:1fr;
+    @media screen and (min-width:1023px){
+        grid-template-columns: .25fr .75fr;
+    }
+}    
 
+.grid-50-25-25{
+    grid-template-columns:1fr;
+    @media screen and (min-width:1023px){
+        grid-template-columns: .5fr .25fr .25fr;
+    }
+}
+
+.grid-25-50-25{
+    grid-template-columns:1fr;
+    @media screen and (min-width:1023px){
+        grid-template-columns: .25fr .5fr .25fr;
+    }
+}

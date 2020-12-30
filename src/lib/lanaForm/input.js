@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Input = ({className, leftIcon, type, name, id, placeholder, value, onChange, disabled, description}) => {
-
+const Input = ({className, leftIcon, rightIcon, type, name, id, placeholder, value, onChange, disabled, description, funcIconDer}) => {
+    
     const _className = ()=>{
         let resultado=[];
         resultado.push("lanaForm__input");
@@ -12,6 +12,9 @@ const Input = ({className, leftIcon, type, name, id, placeholder, value, onChang
         if(leftIcon){
             resultado.push("leftIcon");
         }
+        if(rightIcon){
+            resultado.push("rightIcon");
+        }
         return resultado.join(' ');
     }
 
@@ -19,8 +22,9 @@ const Input = ({className, leftIcon, type, name, id, placeholder, value, onChang
         <div className={_className()}>
             <div className="lanaForm__input__box">
                 {leftIcon && 
-                    <i class={leftIcon}></i> 
+                    <i className={"lanaForm__input__leftIcon "+ leftIcon}></i> 
                 }
+
                 <input 
                     type={type}
                     name={name} 
@@ -29,6 +33,10 @@ const Input = ({className, leftIcon, type, name, id, placeholder, value, onChang
                     placeholder={placeholder}
                     onChange={onChange}
                     disabled={disabled}/>
+
+                {rightIcon && 
+                    <i className={"lanaForm__input__rightIcon "+ rightIcon} { ...funcIconDer &&  { onClick: funcIconDer } } ></i> 
+                }
 
                 { description &&
                     <span className="lanaForm__input__box__descrip">{description}</span>
