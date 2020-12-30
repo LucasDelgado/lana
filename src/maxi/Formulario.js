@@ -2,7 +2,8 @@ import React from 'react'
 import MiCuentaLayout from '../businessLayout/miCuentaLayout'
 import { useField, Form, FormikProps, Formik, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import ComLabel from '../components/label';
+import Input from '../lib/lanaForm/input';
+import Label from '../lib/lanaForm/label';
 
 const SignupSchema = Yup.object().shape({
     firstName: Yup.string()
@@ -24,7 +25,8 @@ const MyTextField = ({ label, ...props }) => {
 
     return (
         <>
-            <ComLabel text={label} {...field} {...props} />
+            <Label text={label}></Label>
+            <Input {...field} {...props} />
             <ErrorMessage
                 component="span"
                 name={props.name}
