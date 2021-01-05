@@ -4,6 +4,7 @@ import { useField, Form, FormikProps, Formik, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import Input from '../lib/lanaForm/input';
 import Label from '../lib/lanaForm/label';
+import FormRow from '../lib/lanaForm/formRow';
 
 const SignupSchema = Yup.object().shape({
     firstName: Yup.string()
@@ -20,23 +21,11 @@ const SignupSchema = Yup.object().shape({
 });
 
 
-const MyTextField = ({ label, ...props }) => {
+const MyTextField = ({ label, errors, ...props}) => {
     const [field, meta, helpers] = useField(props);
-
     return (
         <>
-            <Label text={label}></Label>
-            <Input {...field} {...props} />
-            <ErrorMessage
-                component="span"
-                name={props.name}
-                // className="hintError error"
-                style={{color:"red"}}
-            />
-
-            {/* {meta.touched && meta.error ? (
-                <div className="error">{meta.error}</div>
-            ) : null} */}
+            <Input {...field} description="holaaaa" {...props} meta={meta}/>
         </>
     );
 };
@@ -46,7 +35,6 @@ function Formulario() {
 
     return (
         <MiCuentaLayout>
-            Formulario de ejemplo
             <Formik
                 validationSchema={SignupSchema}
                 initialValues={{
@@ -63,9 +51,18 @@ function Formulario() {
             >
                 {(props) => (
                     <Form>
-                        <MyTextField name="firstName" type="text" label="First Name" />
-                        <MyTextField name="lastName" type="text" label="Last Name" />
-                        <MyTextField name="email" type="email" label="Email" />
+                        <FormRow>
+                            <Label text={"First Name"}></Label>
+                            <MyTextField name="firstName" type="text"/>
+                        </FormRow>
+                        <FormRow>
+                            <Label text={"Last Name"}></Label>
+                            <MyTextField name="lastName" type="text"/>
+                        </FormRow>
+                        <FormRow>
+                            <Label text={"Email"}></Label>
+                            <MyTextField name="email" type="email" />
+                        </FormRow>                     
                         <button type="submit">Submit</button>
                     </Form>
                 )}

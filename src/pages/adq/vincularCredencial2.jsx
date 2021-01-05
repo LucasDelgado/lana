@@ -21,6 +21,7 @@ import FormCol from '../../lib/lanaForm/formCol';
 import RadioInput from '../../lib/lanaForm/radioInput';
 import CheckInput from '../../lib/lanaForm/checkInput';
 import ItemBox from '../../lib/lanaForm/itemBox';
+import Formulario from '../../maxi/Formulario';
 
 
 
@@ -112,7 +113,7 @@ const SolicitudBaja = (props) => {
                                     <ItemBox
                                         input = {<CheckInput>Hola</CheckInput>}
                                         link = {<a href="#">holaa</a>}
-                                        text = {"oasdkaos iasd iasd jiasd jiasd jai"}/>
+                                        />
                                 </FormCol>
                                 <FormCol>
                                     <ItemBox
@@ -122,6 +123,7 @@ const SolicitudBaja = (props) => {
                                 </FormCol>
                             </InputGroup>
                         </FormRow>
+                        <Formulario></Formulario>
                     </form>
                        
                     <Promo 

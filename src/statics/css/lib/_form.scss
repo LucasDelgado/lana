@@ -19,11 +19,11 @@
         row-gap: $spacing-lg; 
         column-gap: $spacing-xs;   
         @media screen and (min-width:1023px){
-            grid-auto-flow: column;
+            grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
             column-gap: $spacing-sm;
         }
         &.state--no-wrap{
-            grid-auto-flow: column !important;
+            grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) ) !important;
         }
     }
     //================================
