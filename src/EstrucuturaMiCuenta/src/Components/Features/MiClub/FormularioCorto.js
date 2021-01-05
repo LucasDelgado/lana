@@ -48,14 +48,17 @@ const FormularioCorto = () => {
                         </InputGroup>
                     </FormRow>
                     <FormRow>
-                        <FormCol>
-                            <Label text={"Número de tarjeta Club LA NACION"} />
-                            <InputGroup>
-                                <Input name="credencial1" type="text" disabled />
-                                <Input name="credencial2" type="text" />
-                                <Input name="credencial3" type="text" />
-                            </InputGroup>
-                        </FormCol>
+                        <InputGroup>
+                            <FormCol>
+                                <Label text={"Número de tarjeta Club LA NACION"} />
+                                <InputGroup>
+                                    <Input name="credencial1" type="text" disabled />
+                                    <Input name="credencial2" type="text" />
+                                    <Input name="credencial3" type="text" />
+                                </InputGroup>
+                            </FormCol>
+                            <FormCol/>
+                        </InputGroup>
                     </FormRow>
                     <button type="submit">Submit</button>
                 </Form>
