@@ -37,8 +37,9 @@ const Input = (props) => {
                     value={value}
                     placeholder={placeholder}
                     onChange={onChange}
-                    disabled={disabled}/>
-
+                    disabled={disabled}
+                    {...props}/>
+                    
                 {rightIcon && 
                     <i className={"lanaForm__input__rightIcon "+ rightIcon} { ...funcIconDer &&  { onClick: funcIconDer } } ></i> 
                 }

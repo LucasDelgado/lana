@@ -9,6 +9,7 @@ import VincularCredencial2 from './pages/adq/vincularCredencial2'
 
 import './App.css';
 import Formulario from './maxi/Formulario';
+import MiClub from './EstrucuturaMiCuenta/src/Pages/MiClub';
 
 const App = () => {
   return (
@@ -29,6 +30,9 @@ const App = () => {
             </Route>
             <Route path="/form">
               <Formulario />
+            </Route>
+            <Route path="/mi-club">
+              <MiClub />
             </Route>
           </Switch>
     </div>
