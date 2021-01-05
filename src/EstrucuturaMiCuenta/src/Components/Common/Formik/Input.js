@@ -14,7 +14,7 @@ const InputFormik = (props) => {
      } */
 
     return (
-        <Input {...field} description="holaaaa" {...props} meta={meta} />
+        <Input {...field} {...props} meta={meta} />
     );
     //ver si el meta . errors puede ser pasado como una prop y no todo el obj para simplificar el input de lana
 };

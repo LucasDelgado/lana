@@ -4,7 +4,10 @@ import MiClubFormCortoSchema from '../../../Validations/MiClubFormCortoSchema'
 
 import Input from '../../Common/Formik/Input';
 import Label from '../../../../../lib/lanaForm/label'
+import InputGroup from '../../../../../lib/lanaForm/inputGroup'
 import FormRow from '../../../../../lib/lanaForm/formRow';
+import FormCol from '../../../../../lib/lanaForm/formCol';
+import SelectFormik from '../../Common/Formik/Select';
 
 
 const FormularioCorto = () => {
@@ -12,9 +15,9 @@ const FormularioCorto = () => {
         <Formik
             validationSchema={MiClubFormCortoSchema}
             initialValues={{
-                email: 'asdas@asd.com',
-                firstName: 'maxi',
-                lastName: 'asdasd',
+                firstGroup: '',
+                secondGroup: '',
+                thirdGroup: ''
             }}
             onSubmit={(values, actions) => {
                 setTimeout(() => {
@@ -26,16 +29,30 @@ const FormularioCorto = () => {
             {(props) => (
                 <Form>
                     <FormRow>
-                        <Label text={"First Name"}></Label>
-                        <Input name="firstName" type="text" />
+                        <InputGroup>
+                            <FormCol>
+                                <Label text={"Tipo de documento"} />
+                                <SelectFormik name="DNI">
+                                    <option value="DNI">DNI</option>
+                                    <option value="Cédula">Cédula</option>
+                                    <option value="LE">LE</option>
+                                </SelectFormik>
+                            </FormCol>
+                            <FormCol>
+                                <Label text={"Número de documento"} />
+                                <Input name="nroDoc" type="number" />
+                            </FormCol>
+                        </InputGroup>
                     </FormRow>
                     <FormRow>
-                        <Label text={"Last Name"}></Label>
-                        <Input name="lastName" type="text" />
-                    </FormRow>
-                    <FormRow>
-                        <Label text={"Email"}></Label>
-                        <Input name="email" type="email" />
+                        <FormCol>
+                            <Label text={"Número de tarjeta Club LA NACION"} />
+                            <InputGroup>
+                                <Input name="firstGroup" type="number" disabled/>
+                                <Input name="secondGroup" type="number" />
+                                <Input name="thirdGroup" type="number" />
+                            </InputGroup>
+                        </FormCol>
                     </FormRow>
                     <button type="submit">Submit</button>
                 </Form>
