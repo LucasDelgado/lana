@@ -15,9 +15,10 @@ const FormularioCorto = () => {
         <Formik
             validationSchema={MiClubFormCortoSchema}
             initialValues={{
-                firstGroup: '',
-                secondGroup: '',
-                thirdGroup: ''
+                nroDoc: '',
+                credencial1: 639130,
+                credencial2: '',
+                credencial3: '',
             }}
             onSubmit={(values, actions) => {
                 setTimeout(() => {
@@ -32,15 +33,17 @@ const FormularioCorto = () => {
                         <InputGroup>
                             <FormCol>
                                 <Label text={"Tipo de documento"} />
-                                <SelectFormik name="DNI">
-                                    <option value="DNI">DNI</option>
-                                    <option value="Cédula">Cédula</option>
-                                    <option value="LE">LE</option>
+                                <SelectFormik name="tipoDoc">
+                                    <option value="DNI" selected>D.N.I.</option>
+                                    <option value="PAS">PAS.</option>
+                                    <option value="LC">L.C.</option>
+                                    <option value="LE">L.E.</option>
+                                    <option value="CI">C.I.</option>
                                 </SelectFormik>
                             </FormCol>
                             <FormCol>
                                 <Label text={"Número de documento"} />
-                                <Input name="nroDoc" type="number" />
+                                <Input name="nroDoc" type="text" />
                             </FormCol>
                         </InputGroup>
                     </FormRow>
@@ -48,9 +51,9 @@ const FormularioCorto = () => {
                         <FormCol>
                             <Label text={"Número de tarjeta Club LA NACION"} />
                             <InputGroup>
-                                <Input name="firstGroup" type="number" disabled/>
-                                <Input name="secondGroup" type="number" />
-                                <Input name="thirdGroup" type="number" />
+                                <Input name="credencial1" type="text" disabled />
+                                <Input name="credencial2" type="text" />
+                                <Input name="credencial3" type="text" />
                             </InputGroup>
                         </FormCol>
                     </FormRow>
