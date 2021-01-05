@@ -21,11 +21,12 @@ const SignupSchema = Yup.object().shape({
 });
 
 
-const MyTextField = ({ label, errors, ...props}) => {
+const MyTextField = (props) => {
     const [field, meta, helpers] = useField(props);
+    console.log(field)
     return (
         <>
-            <Input {...field} description="holaaaa" {...props} meta={meta}/>
+            <Input description="A description" {...field} {...props} meta={meta} />
         </>
     );
 };
@@ -38,9 +39,9 @@ function Formulario() {
             <Formik
                 validationSchema={SignupSchema}
                 initialValues={{
-                    email: 'asdas@asd.com',
+                    email: 'unMailCualquiera@gmail.com',
                     firstName: 'maxi',
-                    lastName: 'asdasd',
+                    lastName: 'asdasdasdas',
                 }}
                 onSubmit={(values, actions) => {
                     setTimeout(() => {
@@ -53,16 +54,16 @@ function Formulario() {
                     <Form>
                         <FormRow>
                             <Label text={"First Name"}></Label>
-                            <MyTextField name="firstName" type="text"/>
+                            <MyTextField name="firstName" type="text" />
                         </FormRow>
                         <FormRow>
                             <Label text={"Last Name"}></Label>
-                            <MyTextField name="lastName" type="text"/>
+                            <MyTextField name="lastName" type="text" />
                         </FormRow>
                         <FormRow>
                             <Label text={"Email"}></Label>
                             <MyTextField name="email" type="email" />
-                        </FormRow>                     
+                        </FormRow>
                         <button type="submit">Submit</button>
                     </Form>
                 )}

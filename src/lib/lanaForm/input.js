@@ -2,7 +2,6 @@ import React from 'react';
 
 const Input = (props) => {
     const {className, meta, leftIcon, rightIcon, type, name, id, placeholder, value, onChange, disabled, description, funcIconDer} = props;
-    console.log(props)
     const _className = ()=>{
         let resultado=[];
         resultado.push("lanaForm__input");
@@ -38,8 +37,9 @@ const Input = (props) => {
                     placeholder={placeholder}
                     onChange={onChange}
                     disabled={disabled}
-                    {...props}/>
-                    
+                    {...props}
+                />
+
                 {rightIcon && 
                     <i className={"lanaForm__input__rightIcon "+ rightIcon} { ...funcIconDer &&  { onClick: funcIconDer } } ></i> 
                 }
