@@ -53,9 +53,9 @@ const FormularioLargo = () => {
                             <FormCol>
                                 <Label text={"Número de tarjeta Club LA NACION"} />
                                 <InputGroup>
-                                    <Input name="credencial1" type="text" disabled />
-                                    <Input name="credencial2" type="text" />
-                                    <Input name="credencial3" type="text" />
+                                    <Input name="credencial1" type="number" disabled />
+                                    <Input name="credencial2" type="number" />
+                                    <Input name="credencial3" type="number" />
                                 </InputGroup>
                             </FormCol>
                             <FormCol />

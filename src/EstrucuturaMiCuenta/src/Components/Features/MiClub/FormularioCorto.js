@@ -9,7 +9,8 @@ import FormCol from '../../../../../lib/lanaForm/formCol';
 import MiClubFormCortoSchema from '../../../Validations/MiClubFormCortoSchema';
 
 
-const FormularioCorto = () => {
+const FormularioCorto = (props) => {
+    const { infoCredencial } = props;
 
     return (
         <Formik
@@ -34,11 +35,15 @@ const FormularioCorto = () => {
                                 <Label text={"Número de tarjeta Club LA NACION"} />
                                 <InputGroup>
                                     <Input name="credencial1" type="text" disabled />
-                                    <Input name="credencial2" type="text" />
-                                    <Input name="credencial3" type="text" />
+                                    {infoCredencial && infoCredencial.length > 1 ?
+                                        <Input name="credencial2" type="number" />
+                                        :
+                                        <Input name="credencial2" type="text" disabled />
+                                    }
+                                    <Input name="credencial3" type="number" />
                                 </InputGroup>
                             </FormCol>
-                            <FormCol/>
+                            <FormCol />
                         </InputGroup>
                     </FormRow>
                     <button type="submit">Submit</button>
