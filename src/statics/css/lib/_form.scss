@@ -211,6 +211,16 @@
                 color: $light-neutral-800;
             }
         }
+
+        // ERROR
+        &.state--error{
+            border-color:$red-500;
+        }
+
+        // SUCCESS
+        &.state--success{
+            border-color:$green-700;
+        }
     }
 
     //================================
