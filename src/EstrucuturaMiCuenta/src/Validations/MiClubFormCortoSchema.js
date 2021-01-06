@@ -10,8 +10,6 @@ const MiClubFormCortoSchema = Yup.object().shape({
     credencial3: Yup.string()
         .matches('^[0-9]{2}$', 'Ingrese 2 dígitos')
         .required('Requerido'),
-    // passport: /^[A-Za-z0-9]{6,10}$/,
-    //Ingrese un documento valido
 });
 
 export default MiClubFormCortoSchema;

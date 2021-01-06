@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Form, Formik } from 'formik';
 
 import Input from '../../Common/Formik/Input';
@@ -15,6 +15,7 @@ const FormularioLargo = () => {
         <Formik
             validationSchema={MiClubFormLargoSchema}
             initialValues={{
+                tipoDoc: 'DNI',
                 nroDoc: '',
                 credencial1: 639130,
                 credencial2: '',
@@ -34,7 +35,7 @@ const FormularioLargo = () => {
                             <FormCol>
                                 <Label text={"Tipo de documento"} />
                                 <SelectFormik name="tipoDoc">
-                                    <option value="DNI" selected>D.N.I.</option>
+                                    <option value="DNI">D.N.I.</option>
                                     <option value="PAS">PAS.</option>
                                     <option value="LC">L.C.</option>
                                     <option value="LE">L.E.</option>
@@ -57,7 +58,7 @@ const FormularioLargo = () => {
                                     <Input name="credencial3" type="text" />
                                 </InputGroup>
                             </FormCol>
-                            <FormCol/>
+                            <FormCol />
                         </InputGroup>
                     </FormRow>
                     <button type="submit">Submit</button>
