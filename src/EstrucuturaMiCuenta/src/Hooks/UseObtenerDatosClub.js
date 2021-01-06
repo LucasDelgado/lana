@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const useFormCorto = () => {
+const useObtenerDatosClub = (tipo) => {
     const apiPaywall = "config.get('Dominios').APIPaywall";
 
     const [isLoading, setIsLoading] = useState(true);
@@ -18,10 +18,33 @@ const useFormCorto = () => {
         ]
     }
 
+    const formMedioJson = {
+        "code": "1",
+        "message": "",
+        "response": [
+            {
+                "nroTarjeta": "6391300143326427",
+                "CrmId": "A02462886"
+            },
+            {
+                "nroTarjeta": "6391300143326428",
+                "CrmId": "A02462887"
+            }
+        ]
+    }
+
+    const formLargoJson = {
+        "code": "2",
+        "message": "",
+        "response": null
+    }
+
+    const forms = [formCortoJson,formMedioJson,formLargoJson]
+
     useEffect(() => {
         const fetchData = () => {
             //ApiService.get(`${apiPaywall}Cliente/GetDatosCliente`)
-            Promise.resolve(formCortoJson)
+            Promise.resolve(forms[tipo])
                 .then(data => {
                     if (data && data.code) {
                         if ((data.code !== "1" && data.code !== "2")) {
@@ -47,4 +70,4 @@ const useFormCorto = () => {
     return [data, error, isLoading];
 };
 
-export default useFormCorto
+export default useObtenerDatosClub
