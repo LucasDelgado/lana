@@ -15,7 +15,7 @@ const Input = (props) => {
         if(rightIcon){
             resultado.push("rightIcon");
         }
-        if(meta != undefined && meta.error){
+        if(meta != undefined && meta.touched && meta.error){
             resultado.push("state--error");
         }
         
@@ -45,7 +45,7 @@ const Input = (props) => {
                 }
 
                 {
-                    meta != undefined  && meta.error ?
+                    meta != undefined  && meta.error && meta.touched ?
                     <span className="lanaForm__input__box__descrip">{meta.error}</span>
                     :
                     <span className="lanaForm__input__box__descrip">{description}</span>

@@ -6,17 +6,18 @@ import Label from '../../../../../lib/lanaForm/label'
 import InputGroup from '../../../../../lib/lanaForm/inputGroup'
 import FormRow from '../../../../../lib/lanaForm/formRow';
 import FormCol from '../../../../../lib/lanaForm/formCol';
-import MiClubFormCortoSchema from '../../../Validations/MiClubFormCortoSchema';
+import SelectFormik from '../../Common/Formik/Select';
+import MiClubFormLargoSchema from '../../../Validations/MiClubFormLargoSchema';
 
 
-const FormularioCorto = () => {
-
+const FormularioLargo = () => {
     return (
         <Formik
-            validationSchema={MiClubFormCortoSchema}
+            validationSchema={MiClubFormLargoSchema}
             initialValues={{
+                nroDoc: '',
                 credencial1: 639130,
-                credencial2: 'XXXXXXXX',
+                credencial2: '',
                 credencial3: '',
             }}
             onSubmit={(values, actions) => {
@@ -28,6 +29,24 @@ const FormularioCorto = () => {
         >
             {(props) => (
                 <Form>
+                    <FormRow>
+                        <InputGroup>
+                            <FormCol>
+                                <Label text={"Tipo de documento"} />
+                                <SelectFormik name="tipoDoc">
+                                    <option value="DNI" selected>D.N.I.</option>
+                                    <option value="PAS">PAS.</option>
+                                    <option value="LC">L.C.</option>
+                                    <option value="LE">L.E.</option>
+                                    <option value="CI">C.I.</option>
+                                </SelectFormik>
+                            </FormCol>
+                            <FormCol>
+                                <Label text={"Número de documento"} />
+                                <Input name="nroDoc" type="text" />
+                            </FormCol>
+                        </InputGroup>
+                    </FormRow>
                     <FormRow>
                         <InputGroup>
                             <FormCol>
@@ -48,4 +67,4 @@ const FormularioCorto = () => {
     )
 }
 
-export default FormularioCorto
+export default FormularioLargo

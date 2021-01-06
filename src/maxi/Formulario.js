@@ -1,6 +1,6 @@
 import React from 'react'
 import MiCuentaLayout from '../businessLayout/miCuentaLayout'
-import { useField, Form, FormikProps, Formik, ErrorMessage } from 'formik';
+import { useField, Form, Formik } from 'formik';
 import * as Yup from 'yup';
 import Input from '../lib/lanaForm/input';
 import Label from '../lib/lanaForm/label';
@@ -22,7 +22,7 @@ const SignupSchema = Yup.object().shape({
 
 
 const MyTextField = (props) => {
-    const [field, meta, helpers] = useField(props);
+    const [field, meta] = useField(props);
     console.log(field)
     return (
         <>

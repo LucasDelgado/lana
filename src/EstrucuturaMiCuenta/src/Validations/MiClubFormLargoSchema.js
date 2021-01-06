@@ -1,6 +1,9 @@
 import * as Yup from 'yup';
 
-const MiClubFormCortoSchema = Yup.object().shape({
+const MiClubFormLargoSchema = Yup.object().shape({
+    nroDoc: Yup.string()
+        .matches('^[1-9][0-9]{6,7}$', "Ingrese un documento válido")
+        .required('Requerido'),
     credencial1: Yup.string()
         .matches('^[0-9]{6}$', 'Ingrese 6 dígitos')
         .required('Requerido'),
@@ -14,4 +17,4 @@ const MiClubFormCortoSchema = Yup.object().shape({
     //Ingrese un documento valido
 });
 
-export default MiClubFormCortoSchema;
+export default MiClubFormLargoSchema;
