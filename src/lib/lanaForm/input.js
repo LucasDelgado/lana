@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Input = (props) => {
-    const {className, meta, leftIcon, rightIcon, type, name, id, placeholder, value, onChange, disabled, description, funcIconDer} = props;
-    console.log(props)
+    const {className, meta, leftIcon, rightIcon, type, name, id, placeholder, value, disabled, description, funcIconDer} = props;
+    
     const _className = ()=>{
         let resultado=[];
         resultado.push("lanaForm__input");
@@ -16,8 +16,11 @@ const Input = (props) => {
         if(rightIcon){
             resultado.push("rightIcon");
         }
-        if(meta != undefined && meta.error){
-            resultado.push("state--error");
+        if(meta != undefined && meta.error && meta.touched){
+            resultado.push("state--error rightIcon");
+        }
+        if(meta != undefined && !meta.error && meta.touched){
+            resultado.push("state--success rightIcon");
         }
         
         return resultado.join(' ');
@@ -36,15 +39,23 @@ const Input = (props) => {
                     id={id}
                     value={value}
                     placeholder={placeholder}
-                    onChange={onChange}
-                    disabled={disabled}/>
+                    disabled={disabled}
+                    {...props}/>
 
                 {rightIcon && 
                     <i className={"lanaForm__input__rightIcon "+ rightIcon} { ...funcIconDer &&  { onClick: funcIconDer } } ></i> 
                 }
 
+                {meta != undefined  && meta.error &&  meta.touched  &&
+                    <i className="lanaForm__input__rightIcon icon-error-warning"></i>
+                }
+
+                {meta != undefined && !meta.error && meta.touched &&
+                    <i className="lanaForm__input__rightIcon icon-check-mark"></i>
+                }
+
                 {
-                    meta != undefined  && meta.error ?
+                    meta != undefined  && meta.error && meta.touched  ?
                     <span className="lanaForm__input__box__descrip">{meta.error}</span>
                     :
                     <span className="lanaForm__input__box__descrip">{description}</span>
