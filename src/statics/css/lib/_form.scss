@@ -140,12 +140,35 @@
         //ERROR
         &.state--error{
             .lanaForm__input__box{
+                .lanaForm__input__rightIcon{
+                    &:before{
+                        color:$red-500;
+                    }
+                } 
                 input{
                     transition: all .3s ease-in-out;
                     border-color:$red-500;
                 }
                 &__descrip{
                     color:$red-500;
+                }
+            }
+        }
+        
+        //SUCCESS
+        &.state--success{
+            .lanaForm__input__box{
+                .lanaForm__input__rightIcon{
+                    &:before{
+                        color:$green-700;
+                    }
+                } 
+                input{
+                    transition: all .3s ease-in-out;
+                    border-color:$green-700;
+                }
+                &__descrip{
+                    color:$green-700;
                 }
             }
         } 
