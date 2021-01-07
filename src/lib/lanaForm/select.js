@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Select = ({children, name, leftIcon, rightIcon, id, className, meta}) => {
+const Select = ({children, name, id, className, meta}) => {
     const _className = ()=>{
         let resultado=[];
 
@@ -8,19 +8,12 @@ const Select = ({children, name, leftIcon, rightIcon, id, className, meta}) => {
         if(className){
             resultado.push(className);
         }
-        if(leftIcon){
-            resultado.push("leftIcon");
-        }
-        if(rightIcon){
-            resultado.push("rightIcon");
-        }
         if(meta != undefined && meta.error && meta.touched){
             resultado.push("state--error");
         }
         if(meta != undefined && !meta.error && meta.touched){
             resultado.push("state--success");
         }
-        
         return resultado.join(' ');
     }
 
