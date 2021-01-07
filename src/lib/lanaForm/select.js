@@ -18,10 +18,10 @@ const Select = ({children, name, id, className, meta}) => {
     }
 
     return ( 
-        <select name={name} id={id} className={_className()}>
+        <select name={name} {...props} id={id} className={_className()}>
             {children}
         </select>
-     );
+    );
 }
- 
+
 export default Select;
