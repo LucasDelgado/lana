@@ -21,7 +21,7 @@ const MiClub = props => {
     }
 
 
-    const [dataRelacionClub, errorRelacionClub, isLoadingRelacion] = useObtenerRelacionClub();
+    const [dataRelacionClub, errorRelacionClub, isLoadingRelacion] = useObtenerRelacionClub(2);
     const [dataClub, errorClub, isLoading] = useObtenerDatosClub(2);
     let infoCred = dataClub ? dataClub.response : null;
     return (
