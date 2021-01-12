@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Select = ({children, name, id, className, meta}) => {
+const Select = (props, {children, name, id, className, meta}) => {
     const _className = ()=>{
         let resultado=[];
 
