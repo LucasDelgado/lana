@@ -21,7 +21,7 @@ const useObtenerRelacionClub = (tipoSuscripcion) => {
                     if (data) {
                         console.log(data)
                         setData(data)
-                        setError(`${data.message} - (codigo de error: ${data.code})`)
+                        setError(null)
                         setIsLoading(false)
 
                     }
