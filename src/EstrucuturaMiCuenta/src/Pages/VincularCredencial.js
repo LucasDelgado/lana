@@ -21,7 +21,7 @@ const MiClub = props => {
     }
 
 
-    const [dataClub, errorClub, isLoading] = useObtenerDatosClub(1);
+    const [dataClub, errorClub, isLoading] = useObtenerDatosClub(0);
     let infoCred = dataClub ? dataClub.response : null;
     return (
         <MiCuentaLayout>
@@ -31,8 +31,8 @@ const MiClub = props => {
             { esLargo(dataClub) &&
                 <FormularioLargo />
             }
-            {esCorto(dataClub)  || esMedio(dataClub) &&
-                <FormularioCorto infoCredencial={infoCred}></FormularioCorto>
+            {(esCorto(dataClub) || esMedio(dataClub)) &&
+                <FormularioCorto esIntermedio={esMedio(dataClub)}></FormularioCorto>
             }
         </MiCuentaLayout>
     )

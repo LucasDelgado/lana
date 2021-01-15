@@ -10,14 +10,15 @@ import MiClubFormCortoSchema from '../../../Validations/MiClubFormCortoSchema';
 
 
 const FormularioCorto = (props) => {
-    const { infoCredencial } = props;
+    const { esIntermedio } = props;
+    const initialCredencial = (esIntermedio ? '' : 'XXXXXXXX');
 
     return (
         <Formik
             validationSchema={MiClubFormCortoSchema}
             initialValues={{
                 credencial1: 639130,
-                credencial2: 'XXXXXXXX',
+                credencial2: initialCredencial,
                 credencial3: '',
             }}
             onSubmit={(values, actions) => {
@@ -35,7 +36,7 @@ const FormularioCorto = (props) => {
                                 <Label text={"Número de tarjeta Club LA NACION"} />
                                 <InputGroup>
                                     <Input name="credencial1" type="text" disabled />
-                                    {infoCredencial && infoCredencial.length > 1 ?
+                                    {esIntermedio ?
                                         <Input name="credencial2" type="number" />
                                         :
                                         <Input name="credencial2" type="text" disabled />

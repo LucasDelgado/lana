@@ -44,7 +44,7 @@ const FormularioLargo = () => {
                             </FormCol>
                             <FormCol>
                                 <Label text={"Número de documento"} />
-                                <Input name="nroDoc" type="text" />
+                                <Input name="nroDoc" type={(props.values.tipoDoc==="PAS")? "text" : "number"} maxlength="8"/>
                             </FormCol>
                         </InputGroup>
                     </FormRow>
@@ -54,8 +54,8 @@ const FormularioLargo = () => {
                                 <Label text={"Número de tarjeta Club LA NACION"} />
                                 <InputGroup>
                                     <Input name="credencial1" type="number" disabled />
-                                    <Input name="credencial2" type="number" />
-                                    <Input name="credencial3" type="number" />
+                                    <Input name="credencial2" type="number" maxlength="8" />
+                                    <Input name="credencial3" type="number" maxlength="2"/>
                                 </InputGroup>
                             </FormCol>
                             <FormCol />
