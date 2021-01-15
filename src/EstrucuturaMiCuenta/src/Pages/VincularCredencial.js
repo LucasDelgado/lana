@@ -3,8 +3,6 @@ import MiCuentaLayout from '../../../businessLayout/miCuentaLayout'
 import FormularioCorto from '../Components/Features/MiClub/FormularioCorto'
 import FormularioLargo from '../Components/Features/MiClub/FormularioLargo';
 import useObtenerDatosClub from '../Hooks/UseObtenerDatosClub';
-import useObtenerRelacionClub from '../Hooks/useObtenerRelacionClub';
-
 
 const MiClub = props => {
 
@@ -21,7 +19,7 @@ const MiClub = props => {
     }
 
 
-    const [dataClub, errorClub, isLoading] = useObtenerDatosClub(0);
+    const [dataClub, errorClub, isLoading] = useObtenerDatosClub(2);
     let infoCred = dataClub ? dataClub.response : null;
     return (
         <MiCuentaLayout>
